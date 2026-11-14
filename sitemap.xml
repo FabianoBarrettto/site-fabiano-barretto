@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Quando houver imóveis reais, adicionar as URLs imovel.html?id=... -->
+<!-- Quando houver imóveis reais, adicionar as URLs imovel.html?id=... (nunca as dos exemplos) -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://fabianobarrettoimoveis.com.br/</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://fabianobarrettoimoveis.com.br/imoveis.html</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://fabianobarrettoimoveis.com.br/como-funciona.html</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://fabianobarrettoimoveis.com.br/simulacao.html</loc><lastmod>2026-11-14</lastmod></url>
+  <url><loc>https://fabianobarrettoimoveis.com.br/sobre.html</loc><lastmod>2026-11-14</lastmod></url>
   <url><loc>https://fabianobarrettoimoveis.com.br/privacidade.html</loc><lastmod>2026-11-14</lastmod></url>
 </urlset>

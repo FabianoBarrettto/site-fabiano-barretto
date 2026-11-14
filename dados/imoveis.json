@@ -1,5 +1,26 @@
 {
-  "_leia-me": "Cadastro de imóveis do site. Para adicionar um imóvel, copie um bloco da lista 'imoveis', troque os dados e coloque 'exemplo': false. Os 3 imóveis abaixo são EXEMPLOS fictícios (valores, bairros e fotos ilustrativas) e devem ser removidos quando houver imóveis reais. Campos: id (sem espaços, usado na URL), titulo, tipo, bairro, cidade, valorAPartir (número em reais), quartos, banheiros, vagas, areaM2, destaque (true aparece na página inicial), descricao, caracteristicas (lista), imagens (lista com src e alt), planta (src e alt, opcional), exemplo (true mostra o selo Exemplo).",
+  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis', troque os dados e mantenha 'exemplo': false. Os 3 imóveis da lista são EXEMPLOS fictícios ('exemplo': true) e devem ser apagados quando entrar o primeiro imóvel real. O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
+  "_modelo": {
+    "id": "casa-2-quartos-umbu-01",
+    "exemplo": false,
+    "destaque": false,
+    "titulo": "Casa de 2 quartos com pátio",
+    "tipo": "Casa",
+    "bairro": "Nome do bairro",
+    "cidade": "Alvorada",
+    "valorAPartir": 0,
+    "quartos": 2,
+    "banheiros": 1,
+    "vagas": 1,
+    "areaM2": 0,
+    "descricao": "Texto curto e claro sobre o imóvel (2 a 4 frases).",
+    "caracteristicas": ["Item 1", "Item 2", "Item 3"],
+    "imagens": [
+      { "src": "img/imoveis/casa-2-quartos-umbu-01/01.webp", "alt": "Fachada da casa de 2 quartos no bairro X" },
+      { "src": "img/imoveis/casa-2-quartos-umbu-01/02.webp", "alt": "Sala integrada com a cozinha" }
+    ],
+    "planta": { "src": "img/imoveis/casa-2-quartos-umbu-01/planta.webp", "alt": "Planta baixa da casa de 2 quartos" }
+  },
   "imoveis": [
     {
       "id": "exemplo-casa-2-quartos",

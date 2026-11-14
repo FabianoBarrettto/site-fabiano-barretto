@@ -49,6 +49,7 @@ ul{padding-left:1.2em}
 .nav a{display:block;padding:12px 4px;text-decoration:none;font-weight:600;color:var(--marinho);border-bottom:1px solid var(--gelo)}
 .nav a[aria-current="page"]{color:var(--dourado-texto)}
 .nav .btn{margin-top:12px;text-align:center;border-bottom:0}
+.nav a.btn-whatsapp{color:#fff}
 
 /* Botões */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font:inherit;font-weight:700;font-size:1rem;text-decoration:none;border:2px solid transparent;cursor:pointer;line-height:1.2;transition:background .2s,transform .1s}
@@ -96,7 +97,7 @@ section{padding:56px 0}
 .imovel-card:hover{box-shadow:0 10px 30px rgba(20,48,79,.18)}
 .imovel-foto{position:relative;aspect-ratio:4/3;background:var(--gelo)}
 .imovel-foto img{width:100%;height:100%;object-fit:cover}
-.selo{position:absolute;top:12px;left:12px;background:var(--dourado);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
+.selo{position:absolute;top:12px;left:12px;background:var(--dourado-texto);color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px}
 .selo-ilustrativa{left:auto;right:12px;background:rgba(20,48,79,.85)}
 .imovel-corpo{padding:16px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
 .imovel-bairro{font-size:.82rem;font-weight:600;color:var(--dourado-texto);text-transform:uppercase;letter-spacing:.06em}
