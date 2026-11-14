@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Trocar DOMINIO_A_DEFINIR pelo domínio real quando for registrado
-Sitemap: https://DOMINIO_A_DEFINIR/sitemap.xml
+Sitemap: https://fabianobarrettoimoveis.com.br/sitemap.xml
