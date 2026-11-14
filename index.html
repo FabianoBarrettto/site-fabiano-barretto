@@ -23,7 +23,7 @@
 <meta property="og:image:alt" content="Logotipo Fabiano Barretto Imóveis">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script type="application/ld+json">
 {
@@ -41,7 +41,7 @@
   "address": { "@type": "PostalAddress", "addressLocality": "Alvorada", "addressRegion": "RS", "addressCountry": "BR" },
   "founder": { "@type": "Person", "name": "Fabiano Barretto", "jobTitle": "Corretor de imóveis", "url": "https://fabianobarrettoimoveis.com.br/sobre.html" },
   "contactPoint": { "@type": "ContactPoint", "contactType": "customer service", "telephone": "+55-51-98573-8049", "url": "https://wa.me/5551985738049", "availableLanguage": "Portuguese" },
-  "knowsAbout": ["Minha Casa Minha Vida", "Financiamento imobiliário", "Compra de imóveis em Alvorada RS"],
+  "knowsAbout": ["Minha Casa Minha Vida", "Financiamento imobiliário", "Compra de imóveis em Alvorada RS", "Imóveis de médio e alto padrão"],
   "areaServed": [
     { "@type": "City", "name": "Alvorada", "containedInPlace": { "@type": "AdministrativeArea", "name": "Rio Grande do Sul" } },
     { "@type": "AdministrativeArea", "name": "Região Metropolitana de Porto Alegre" }
@@ -55,19 +55,29 @@
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<div class="topo-barra">
+  <div class="container">
+    <span><span class="topo-texto-curto">CRECI/RS 82351-F · Alvorada/RS</span><span class="topo-texto-longo">CRECI/RS 82351-F · Atendimento em Alvorada/RS e região</span></span>
+    <div class="topo-direita">
+      <a class="topo-wa" href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a>
+      <div class="topo-redes">
+        <a href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M16.5 7.5v.01"></path></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="marca" href="index.html" aria-label="Fabiano Barretto Imóveis, página inicial">
-      <img src="img/simbolo.svg" alt="" width="34" height="40">
-      <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
+      <img src="img/logo-site.png" alt="Fabiano Barretto Imóveis" width="157" height="54">
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     <nav class="nav" id="menu" aria-label="Principal">
-      <a href="index.html" aria-current="page">Início</a>
       <a href="imoveis.html">Imóveis</a>
       <a href="como-funciona.html">Como funciona</a>
-      <a href="sobre.html">Sobre</a>
       <a href="simulacao.html">Simulação</a>
+      <a href="sobre.html">Sobre</a>
       <a class="btn btn-whatsapp" href="https://wa.me/5551985738049" target="_blank" rel="noopener">Fale comigo</a>
     </nav>
   </div>
@@ -75,123 +85,165 @@
 
 <main id="conteudo">
   <section class="hero">
-    <div class="container">
-      <span class="eyebrow">Minha Casa Minha Vida · Alvorada RS</span>
-      <h1>Saia do aluguel e conquiste a sua casa própria</h1>
-      <p class="lead">Vamos juntos conquistar sua casa própria. Eu cuido da simulação, da documentação e dos próximos passos, e acompanho a sua família até a chave na mão.</p>
-      <div class="hero-acoes">
-        <a class="btn btn-whatsapp" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Quero%20sair%20do%20aluguel.%20Pode%20me%20ajudar%3F" target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Fale comigo no WhatsApp</a>
-        <a class="btn btn-contorno" href="simulacao.html">Fazer simulação gratuita</a>
+    <div class="container hero-grade">
+      <div class="hero-texto">
+        <span class="selo-verde">Minha Casa Minha Vida em Alvorada</span>
+        <h1>Sair do aluguel é possível. <span>Vamos juntos?</span></h1>
+        <p class="lead">Eu explico tudo sem complicação: quanto fica a parcela, como usar o FGTS e quais documentos separar. Você não precisa entender de financiamento para começar.</p>
+        <div class="hero-acoes">
+          <a class="btn btn-whatsapp" href="simulacao.html"><img src="img/whatsapp.svg" alt="" width="22" height="22">Faça sua simulação gratuita</a>
+        </div>
+        <p class="aviso-pequeno">Sem compromisso. Sujeito à aprovação de crédito.</p>
       </div>
-      <ul class="hero-confianca">
-        <li>Atendimento próximo, do começo ao fim</li>
-        <li>Corretor com CRECI/RS 82351-F</li>
-        <li>Simulação sem compromisso</li>
-      </ul>
-      <p class="aviso-pequeno" style="margin-top:18px">Financiamento sujeito à aprovação de crédito.</p>
+      <div class="hero-foto">
+        <picture>
+          <source media="(min-width:720px)" srcset="img/fabiano-destaque-900.webp">
+          <img src="img/fabiano-destaque-600.webp" width="600" height="800" alt="Fabiano Barretto, corretor de imóveis em Alvorada RS" fetchpriority="high">
+        </picture>
+        <div class="hero-cracha"><strong>Fabiano Barretto</strong><span>Corretor · CRECI/RS 82351-F</span></div>
+      </div>
     </div>
   </section>
 
-  <section id="destaques-secao">
+  <section class="secao-busca" aria-labelledby="busca-titulo">
+    <div class="container">
+      <form class="busca" action="imoveis.html" method="get" id="form-busca">
+        <h2 class="busca-titulo" id="busca-titulo">Que imóvel você procura?</h2>
+        <div class="busca-campos">
+          <div>
+            <label for="b-categoria">Categoria</label>
+            <select id="b-categoria" name="categoria">
+              <option value="">Todas</option>
+              <option value="mcmv">Minha Casa Minha Vida</option>
+              <option value="medio-alto">Médio e alto padrão</option>
+            </select>
+          </div>
+          <div>
+            <label for="b-tipo">Tipo</label>
+            <select id="b-tipo" name="tipo">
+              <option value="">Todos os tipos</option>
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+              <option value="Sobrado">Sobrado</option>
+            </select>
+          </div>
+          <div>
+            <label for="b-valor">Valor até</label>
+            <select id="b-valor" name="valor">
+              <option value="">Qualquer valor</option>
+              <option value="200000">R$ 200 mil</option>
+              <option value="300000">R$ 300 mil</option>
+              <option value="500000">R$ 500 mil</option>
+              <option value="800000">R$ 800 mil</option>
+            </select>
+          </div>
+          <div>
+            <label for="b-bairro">Bairro</label>
+            <select id="b-bairro" name="bairro">
+              <option value="">Todos os bairros</option>
+            </select>
+          </div>
+          <button type="submit">Buscar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section id="mcmv">
     <div class="container">
       <div class="titulo-secao">
-        <span class="eyebrow">Imóveis</span>
-        <h2>Imóveis em destaque</h2>
-        <hr class="linha-dourada">
-        <p>Opções em Alvorada e região, com o valor "a partir de" e tudo o que você precisa saber para decidir.</p>
+        <h2>Quem pode entrar no Minha Casa Minha Vida?</h2>
+        <p>O programa olha a renda bruta da família por mês. Veja em qual faixa você se encaixa:</p>
       </div>
-      <div class="grade grade-3" id="destaques" aria-live="polite">
+      <ul class="faixas">
+        <li><span class="faixa-nome">Faixa 1</span><span class="faixa-rotulo">Renda familiar até</span><strong class="faixa-valor">R$ 3.200</strong></li>
+        <li><span class="faixa-nome">Faixa 2</span><span class="faixa-rotulo">Renda familiar até</span><strong class="faixa-valor">R$ 5.000</strong></li>
+        <li><span class="faixa-nome">Faixa 3</span><span class="faixa-rotulo">Renda familiar até</span><strong class="faixa-valor">R$ 9.600</strong></li>
+        <li><span class="faixa-nome">Faixa 4</span><span class="faixa-rotulo">Renda familiar até</span><strong class="faixa-valor">R$ 13.000</strong></li>
+      </ul>
+      <p class="aviso-pequeno" style="margin:16px 0 0">Faixas conforme a Portaria MCID nº 333/2026. Valores e condições sujeitos à aprovação de crédito. <a href="como-funciona.html">Entenda o passo a passo</a>.</p>
+    </div>
+  </section>
+
+  <section id="imoveis">
+    <div class="container">
+      <div class="titulo-linha">
+        <h2>Imóveis para você conhecer</h2>
+        <span class="deslize" aria-hidden="true">Deslize →</span>
+        <a class="link-seta" href="imoveis.html?categoria=mcmv">Ver todos →</a>
+      </div>
+      <div class="faixa-imoveis" id="destaques" aria-live="polite">
         <p class="vazio">Carregando imóveis...</p>
       </div>
-      <p style="margin-top:28px"><a class="btn btn-marinho" href="imoveis.html">Ver todos os imóveis</a></p>
     </div>
   </section>
 
-  <section class="secao-gelo">
+  <section id="alto-padrao" style="padding-top:0">
     <div class="container">
-      <div class="titulo-secao">
-        <span class="eyebrow">Minha Casa Minha Vida</span>
-        <h2>Como funciona, em poucas palavras</h2>
-        <hr class="linha-dourada">
-        <p>O caminho até a casa própria é mais simples quando alguém explica cada etapa. Veja o resumo:</p>
+      <div class="titulo-linha">
+        <div>
+          <h2>Médio e alto padrão</h2>
+          <p class="aviso-pequeno" style="margin:6px 0 0;font-size:.95rem">Casas e apartamentos com mais espaço e acabamento, para quem busca o próximo passo.</p>
+        </div>
+        <a class="link-seta" href="imoveis.html?categoria=medio-alto">Ver todos →</a>
       </div>
-      <ol class="passos">
-        <li><h3>Conversamos e fazemos sua simulação</h3><p>Você me conta a renda da família e o que procura. Eu mostro o que é possível para o seu caso.</p></li>
-        <li><h3>Separamos os documentos</h3><p>Eu te digo exatamente o que juntar, para você não perder tempo nem fazer viagem à toa.</p></li>
-        <li><h3>Escolhemos o imóvel</h3><p>Você visita as opções que cabem no seu bolso e na sua rotina.</p></li>
-        <li><h3>Análise de crédito e contrato</h3><p>O banco analisa o seu perfil e o imóvel. Eu acompanho cada etapa até a assinatura e a chave.</p></li>
-      </ol>
-      <p style="margin-top:28px"><a class="btn btn-contorno" href="como-funciona.html">Entender o passo a passo completo</a></p>
-    </div>
-  </section>
-
-  <section id="sobre">
-    <div class="container sobre">
-      <div>
-        <span class="eyebrow">Sobre o corretor</span>
-        <h2>Fabiano Barretto, ao lado da sua família</h2>
-        <hr class="linha-dourada">
-        <p>Sou corretor de imóveis em Alvorada, no Rio Grande do Sul, e atendo também a região metropolitana de Porto Alegre. Meu trabalho é ajudar famílias a sair do aluguel pelo Minha Casa Minha Vida, com conversa franca, sem pressa e sem complicação.</p>
-        <p>Cada família tem uma história e um orçamento. Por isso, eu explico tudo com calma, confiro a documentação e fico por perto até o dia de receber a chave.</p>
-        <p style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-whatsapp" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Gostaria%20de%20conversar%20sobre%20a%20compra%20da%20minha%20casa." target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Conversar com o Fabiano</a> <a class="btn btn-contorno" href="sobre.html">Saiba mais sobre mim</a></p>
-      </div>
-      <div class="sobre-selo">
-        <img src="img/simbolo.svg" alt="Símbolo da marca Fabiano Barretto Imóveis" width="84" height="100">
-        <div class="nome">Fabiano Barretto</div>
-        <div>Corretor de imóveis</div>
-        <div class="creci">CRECI/RS 82351-F</div>
-        <div style="margin-top:8px">Alvorada · RS</div>
+      <div class="faixa-imoveis tres" id="destaques-alto" aria-live="polite">
+        <p class="vazio">Carregando imóveis...</p>
       </div>
     </div>
   </section>
 
-  <section class="cta-final">
+  <section id="sobre" style="padding-top:0">
     <div class="container">
-      <h2>Vamos descobrir quanto você pode financiar?</h2>
-      <p>A simulação é gratuita e sem compromisso. Preencha em 1 minuto e continue a conversa comigo no WhatsApp.</p>
-      <div class="hero-acoes">
-        <a class="btn btn-whatsapp" href="simulacao.html">Faça sua simulação gratuita</a>
+      <div class="bloco-sobre">
+        <div class="foto-arco">
+          <picture>
+            <source media="(min-width:720px)" srcset="img/fabiano-sobre-640.webp">
+            <img src="img/fabiano-sobre-400.webp" width="400" height="500" alt="Fabiano Barretto, corretor de imóveis em Alvorada RS" loading="lazy">
+          </picture>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <h2>Quem é o seu corretor?</h2>
+          <p>Sou corretor aqui em Alvorada e ajudo famílias a trocar o aluguel pela casa própria. Faço a simulação, organizo os documentos com você e acompanho o financiamento pela Caixa até a entrega das chaves.</p>
+          <p>Também atendo quem procura imóveis de médio e alto padrão.</p>
+          <span class="creci-destaque">CRECI/RS 82351-F</span>
+          <div class="acoes">
+            <a class="btn btn-whatsapp" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site%20e%20quero%20conversar." target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Vamos conversar no WhatsApp</a>
+            <a class="btn btn-contorno" href="sobre.html">Saiba mais sobre mim</a>
+          </div>
+        </div>
       </div>
-      <p class="aviso-pequeno" style="color:#b8c7d6;margin-top:18px">Sujeito à aprovação de crédito.</p>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grade">
-      <div class="footer-marca">
-        <a class="marca" href="index.html">
-          <img src="img/simbolo.svg" alt="" width="40" height="48">
-          <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
-        </a>
-        <p style="margin-top:14px">Minha Casa Minha Vida em Alvorada RS e região. Vamos juntos conquistar sua casa própria.</p>
-        <p><strong>CRECI/RS 82351-F</strong></p>
-      </div>
+    <div class="footer-topo">
       <div>
-        <h2>Contato</h2>
-        <ul class="footer-lista">
-          <li><a href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a></li>
-          <li><a href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener">Instagram @fabianobarrettoimoveis</a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener">Facebook Fabiano Barretto Imóveis</a></li>
-        </ul>
+        <div class="footer-nome">FABIANO BARRETTO IMÓVEIS</div>
+        <div>CRECI/RS 82351-F · Alvorada/RS</div>
       </div>
-      <div>
-        <h2>Navegue</h2>
-        <ul class="footer-lista">
-          <li><a href="imoveis.html">Imóveis</a></li>
-          <li><a href="como-funciona.html">Como funciona o MCMV</a></li>
-          <li><a href="simulacao.html">Simulação gratuita</a></li>
-          <li><a href="sobre.html">Sobre o corretor</a></li>
-          <li><a href="privacidade.html">Aviso de privacidade</a></li>
-        </ul>
+      <div class="footer-botoes">
+        <a class="btn btn-whatsapp" href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a>
+        <a class="btn btn-dourado" href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-dourado" href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
-    <p class="footer-legal">&copy; <span id="ano">2026</span> Fabiano Barretto Imóveis · CRECI/RS 82351-F. Este é um site de um corretor de imóveis e não é um site oficial do governo nem da Caixa. Condições do Minha Casa Minha Vida sujeitas às regras vigentes e à aprovação de crédito.</p>
+    <ul class="footer-nav" aria-label="Páginas do site">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="imoveis.html">Imóveis</a></li>
+      <li><a href="imoveis.html?categoria=medio-alto">Médio e alto padrão</a></li>
+      <li><a href="como-funciona.html">Como funciona o MCMV</a></li>
+      <li><a href="simulacao.html">Simulação gratuita</a></li>
+      <li><a href="sobre.html">Sobre o corretor</a></li>
+      <li><a href="privacidade.html">Aviso de privacidade</a></li>
+    </ul>
+    <p class="footer-legal">&copy; <span id="ano">2026</span> Fabiano Barretto Imóveis · CRECI/RS 82351-F. Valores e condições sujeitos à aprovação de crédito. Imagens de exemplo são ilustrativas. Este é o site de um corretor de imóveis, não é um site oficial do governo nem da Caixa.</p>
   </div>
 </footer>
 
-<a class="wa-flutuante" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Fale comigo no WhatsApp"><img src="img/whatsapp.svg" alt="" width="32" height="32"></a>
+<a class="wa-flutuante" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Fale comigo no WhatsApp"><img src="img/whatsapp.svg" alt="" width="30" height="30"><span>Tire suas dúvidas</span></a>
 <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -23,24 +23,34 @@
 <meta property="og:image:alt" content="Logotipo Fabiano Barretto Imóveis">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<div class="topo-barra">
+  <div class="container">
+    <span><span class="topo-texto-curto">CRECI/RS 82351-F · Alvorada/RS</span><span class="topo-texto-longo">CRECI/RS 82351-F · Atendimento em Alvorada/RS e região</span></span>
+    <div class="topo-direita">
+      <a class="topo-wa" href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a>
+      <div class="topo-redes">
+        <a href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"></rect><circle cx="12" cy="12" r="3.5"></circle><path d="M16.5 7.5v.01"></path></svg></a>
+        <a href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
 <header class="site-header">
   <div class="container header-inner">
     <a class="marca" href="index.html" aria-label="Fabiano Barretto Imóveis, página inicial">
-      <img src="img/simbolo.svg" alt="" width="34" height="40">
-      <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
+      <img src="img/logo-site.png" alt="Fabiano Barretto Imóveis" width="157" height="54">
     </a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     <nav class="nav" id="menu" aria-label="Principal">
-      <a href="index.html">Início</a>
       <a href="imoveis.html">Imóveis</a>
       <a href="como-funciona.html">Como funciona</a>
-      <a href="sobre.html">Sobre</a>
       <a href="simulacao.html" aria-current="page">Simulação</a>
+      <a href="sobre.html">Sobre</a>
       <a class="btn btn-whatsapp" href="https://wa.me/5551985738049" target="_blank" rel="noopener">Fale comigo</a>
     </nav>
   </div>
@@ -100,39 +110,31 @@
 
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-grade">
-      <div class="footer-marca">
-        <a class="marca" href="index.html">
-          <img src="img/simbolo.svg" alt="" width="40" height="48">
-          <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
-        </a>
-        <p style="margin-top:14px">Minha Casa Minha Vida em Alvorada RS e região. Vamos juntos conquistar sua casa própria.</p>
-        <p><strong>CRECI/RS 82351-F</strong></p>
-      </div>
+    <div class="footer-topo">
       <div>
-        <h2>Contato</h2>
-        <ul class="footer-lista">
-          <li><a href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a></li>
-          <li><a href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener">Instagram @fabianobarrettoimoveis</a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener">Facebook Fabiano Barretto Imóveis</a></li>
-        </ul>
+        <div class="footer-nome">FABIANO BARRETTO IMÓVEIS</div>
+        <div>CRECI/RS 82351-F · Alvorada/RS</div>
       </div>
-      <div>
-        <h2>Navegue</h2>
-        <ul class="footer-lista">
-          <li><a href="imoveis.html">Imóveis</a></li>
-          <li><a href="como-funciona.html">Como funciona o MCMV</a></li>
-          <li><a href="simulacao.html">Simulação gratuita</a></li>
-          <li><a href="sobre.html">Sobre o corretor</a></li>
-          <li><a href="privacidade.html">Aviso de privacidade</a></li>
-        </ul>
+      <div class="footer-botoes">
+        <a class="btn btn-whatsapp" href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a>
+        <a class="btn btn-dourado" href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener">Instagram</a>
+        <a class="btn btn-dourado" href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener">Facebook</a>
       </div>
     </div>
-    <p class="footer-legal">&copy; <span id="ano">2026</span> Fabiano Barretto Imóveis · CRECI/RS 82351-F. Este é um site de um corretor de imóveis e não é um site oficial do governo nem da Caixa. Condições do Minha Casa Minha Vida sujeitas às regras vigentes e à aprovação de crédito.</p>
+    <ul class="footer-nav" aria-label="Páginas do site">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="imoveis.html">Imóveis</a></li>
+      <li><a href="imoveis.html?categoria=medio-alto">Médio e alto padrão</a></li>
+      <li><a href="como-funciona.html">Como funciona o MCMV</a></li>
+      <li><a href="simulacao.html">Simulação gratuita</a></li>
+      <li><a href="sobre.html">Sobre o corretor</a></li>
+      <li><a href="privacidade.html">Aviso de privacidade</a></li>
+    </ul>
+    <p class="footer-legal">&copy; <span id="ano">2026</span> Fabiano Barretto Imóveis · CRECI/RS 82351-F. Valores e condições sujeitos à aprovação de crédito. Imagens de exemplo são ilustrativas. Este é o site de um corretor de imóveis, não é um site oficial do governo nem da Caixa.</p>
   </div>
 </footer>
 
-<a class="wa-flutuante" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Fale comigo no WhatsApp"><img src="img/whatsapp.svg" alt="" width="32" height="32"></a>
+<a class="wa-flutuante" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Fale comigo no WhatsApp"><img src="img/whatsapp.svg" alt="" width="30" height="30"><span>Tire suas dúvidas</span></a>
 <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -54,47 +54,79 @@
       '<a class="btn btn-whatsapp" href="' + waLink('Olá, Fabiano! Quero ver os imóveis disponíveis em Alvorada.') + '">Fale comigo no WhatsApp</a></div>';
   }
 
+  function categoria(im) { return im.categoria === 'medio-alto' ? 'medio-alto' : 'mcmv'; }
+  var NOME_CATEGORIA = { 'mcmv': 'Minha Casa Minha Vida', 'medio-alto': 'Médio e alto padrão' };
+
   function cardImovel(im) {
     var img = (im.imagens && im.imagens[0]) || { src: 'img/exemplo-casa.svg', alt: '' };
-    var meta = [];
-    if (im.quartos) meta.push('<li>' + esc(im.quartos) + (im.quartos > 1 ? ' quartos' : ' quarto') + '</li>');
-    if (im.banheiros) meta.push('<li>' + esc(im.banheiros) + (im.banheiros > 1 ? ' banheiros' : ' banheiro') + '</li>');
-    if (im.vagas) meta.push('<li>' + esc(im.vagas) + (im.vagas > 1 ? ' vagas' : ' vaga') + '</li>');
-    if (im.areaM2) meta.push('<li>' + esc(im.areaM2) + ' m²</li>');
-    return '<a class="card imovel-card" href="imovel.html?id=' + encodeURIComponent(im.id) + '">' +
+    var info = [esc(im.bairro)];
+    if (im.areaM2) info.push(esc(im.areaM2) + ' m²');
+    if (im.quartos) info.push(esc(im.quartos) + (im.quartos > 1 ? ' quartos' : ' quarto'));
+    return '<a class="imovel-card" href="imovel.html?id=' + encodeURIComponent(im.id) + '">' +
       '<div class="imovel-foto"><img src="' + esc(img.src) + '" alt="' + esc(img.alt) + '" loading="lazy" width="800" height="600">' +
-      (im.exemplo ? '<span class="selo">Exemplo</span><span class="selo selo-ilustrativa">Imagem ilustrativa</span>' : '') + '</div>' +
+      (im.etiqueta ? '<span class="etiqueta">' + esc(im.etiqueta) + '</span>' : '') +
+      (im.exemplo ? '<span class="selo selo-ilustrativa">Exemplo</span>' : '') + '</div>' +
       '<div class="imovel-corpo">' +
-      '<span class="imovel-bairro">' + esc(im.bairro) + ' · ' + esc(im.cidade) + '</span>' +
       '<h3 class="imovel-titulo">' + esc(im.titulo) + '</h3>' +
+      '<span class="imovel-bairro">' + info.join(' · ') + '</span>' +
       '<p class="imovel-preco">a partir de <strong>' + brl(im.valorAPartir) + '</strong></p>' +
-      '<ul class="imovel-meta">' + meta.join('') + '</ul>' +
+      (im.exemplo ? '<span class="valor-exemplo">Valor de exemplo</span>' : '') +
       '</div></a>';
   }
 
-  /* Destaques na página inicial */
-  var destaques = document.getElementById('destaques');
-  if (destaques) {
+  /* Destaques na página inicial: uma faixa por categoria */
+  function faixaDestaques(el, cat, max) {
+    if (!el) return;
     carregarImoveis().then(function (lista) {
-      var sel = lista.filter(function (i) { return i.destaque; }).slice(0, 3);
-      destaques.innerHTML = sel.length ? sel.map(cardImovel).join('') :
+      var sel = lista.filter(function (i) { return i.destaque && categoria(i) === cat; }).slice(0, max);
+      el.innerHTML = sel.length ? sel.map(cardImovel).join('') :
         '<p class="vazio">Em breve, novos imóveis por aqui. Fale comigo no WhatsApp para saber das oportunidades.</p>';
-    }).catch(function () { destaques.innerHTML = msgErro(); });
+    }).catch(function () { el.innerHTML = msgErro(); });
+  }
+  faixaDestaques(document.getElementById('destaques'), 'mcmv', 4);
+  faixaDestaques(document.getElementById('destaques-alto'), 'medio-alto', 3);
+
+  /* Busca da página inicial: preenche os bairros a partir do cadastro */
+  var buscaBairro = document.getElementById('b-bairro');
+  if (buscaBairro) {
+    carregarImoveis().then(function (lista) {
+      bairrosDe(lista).forEach(function (b) {
+        var o = document.createElement('option');
+        o.value = b; o.textContent = b; buscaBairro.appendChild(o);
+      });
+    }).catch(function () { /* a busca continua funcionando sem a lista de bairros */ });
+  }
+
+  function bairrosDe(lista) {
+    var bairros = [];
+    lista.forEach(function (i) { if (i.bairro && bairros.indexOf(i.bairro) < 0) bairros.push(i.bairro); });
+    return bairros.sort(function (a, b) { return a.localeCompare(b, 'pt-BR'); });
   }
 
   /* Lista com filtros */
   var lista = document.getElementById('lista-imoveis');
   if (lista) {
+    var fCategoria = document.getElementById('f-categoria');
+    var fTipo = document.getElementById('f-tipo');
     var fBairro = document.getElementById('f-bairro');
     var fValor = document.getElementById('f-valor');
     var fQuartos = document.getElementById('f-quartos');
     var contagem = document.getElementById('contagem');
     var todos = [];
+    var params = new URLSearchParams(location.search);
+
+    function preencher(sel, valor) {
+      if (!valor) return;
+      for (var n = 0; n < sel.options.length; n++) {
+        if (sel.options[n].value === valor) { sel.value = valor; return; }
+      }
+    }
 
     function aplicar() {
-      var b = fBairro.value, v = Number(fValor.value) || 0, q = Number(fQuartos.value) || 0;
+      var c = fCategoria.value, t = fTipo.value, b = fBairro.value, v = Number(fValor.value) || 0, q = Number(fQuartos.value) || 0;
       var res = todos.filter(function (i) {
-        return (!b || i.bairro === b) && (!v || i.valorAPartir <= v) && (!q || i.quartos >= q);
+        return (!c || categoria(i) === c) && (!t || i.tipo === t) && (!b || i.bairro === b) &&
+          (!v || i.valorAPartir <= v) && (!q || i.quartos >= q);
       });
       contagem.textContent = res.length === 1 ? '1 imóvel encontrado' : res.length + ' imóveis encontrados';
       lista.innerHTML = res.length ? res.map(cardImovel).join('') :
@@ -104,13 +136,17 @@
 
     carregarImoveis().then(function (d) {
       todos = d;
-      var bairros = [];
-      d.forEach(function (i) { if (bairros.indexOf(i.bairro) < 0) bairros.push(i.bairro); });
-      bairros.sort().forEach(function (b) {
+      bairrosDe(d).forEach(function (b) {
         var o = document.createElement('option');
         o.value = b; o.textContent = b; fBairro.appendChild(o);
       });
-      [fBairro, fValor, fQuartos].forEach(function (el) { el.addEventListener('change', aplicar); });
+      /* Filtros vindos da busca da página inicial (imoveis.html?categoria=...&tipo=...) */
+      preencher(fCategoria, params.get('categoria'));
+      preencher(fTipo, params.get('tipo'));
+      preencher(fBairro, params.get('bairro'));
+      preencher(fValor, params.get('valor'));
+      preencher(fQuartos, params.get('quartos'));
+      [fCategoria, fTipo, fBairro, fValor, fQuartos].forEach(function (el) { el.addEventListener('change', aplicar); });
       aplicar();
     }).catch(function () { lista.innerHTML = msgErro(); contagem.textContent = ''; });
   }
@@ -137,7 +173,7 @@
 
     document.title = im.titulo + ' em ' + im.bairro + ', Alvorada RS | Fabiano Barretto Imóveis';
     var md = document.querySelector('meta[name="description"]');
-    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', Alvorada RS, a partir de ' + brl(im.valorAPartir) + '. Minha Casa Minha Vida, sujeito à aprovação de crédito.');
+    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', Alvorada RS, a partir de ' + brl(im.valorAPartir) + '. ' + NOME_CATEGORIA[categoria(im)] + ', sujeito à aprovação de crédito.');
 
     if (im.exemplo) {
       var robots = document.createElement('meta');
@@ -155,7 +191,8 @@
       '<div class="imovel-detalhe"><div>' +
       '<div class="galeria"><div class="galeria-principal">' +
       (imgs[0] ? '<img id="foto-principal" src="' + esc(imgs[0].src) + '" alt="' + esc(imgs[0].alt) + '" width="800" height="600">' : '') +
-      (im.exemplo ? '<span class="selo">Exemplo</span><span class="selo selo-ilustrativa">Imagem ilustrativa</span>' : '') +
+      (im.etiqueta ? '<span class="etiqueta">' + esc(im.etiqueta) + '</span>' : '') +
+      (im.exemplo ? '<span class="selo selo-ilustrativa">Imagem ilustrativa</span>' : '') +
       '</div>';
     if (imgs.length > 1) {
       html += '<div class="miniaturas">' + imgs.map(function (g, n) {
@@ -174,12 +211,14 @@
       html += '<h3 style="margin-top:28px">Planta</h3><img src="' + esc(im.planta.src) + '" alt="' + esc(im.planta.alt) + '" loading="lazy" width="800" height="600" style="border-radius:14px;border:1px solid var(--borda)">';
     }
     html += '</div><aside class="painel-lateral card"><div class="card-corpo">' +
-      '<span class="imovel-bairro">' + esc(im.tipo) + ' · ' + esc(im.bairro) + ', ' + esc(im.cidade) + '</span>' +
+      '<span class="eyebrow" style="margin:0">' + esc(NOME_CATEGORIA[categoria(im)]) + '</span>' +
+      '<span class="imovel-bairro" style="display:block">' + esc(im.tipo) + ' · ' + esc(im.bairro) + ', ' + esc(im.cidade) + '</span>' +
       '<h1 style="font-size:1.6rem;margin:8px 0 14px">' + esc(im.titulo) + '</h1>' +
       '<p class="imovel-preco" style="margin:0">a partir de</p><p class="preco-grande">' + brl(im.valorAPartir) + '</p>' +
       '<ul class="ficha">' + fichas.map(function (f) { return '<li>' + esc(f[0]) + '<strong>' + esc(f[1]) + '</strong></li>'; }).join('') + '</ul>' +
       '<a class="btn btn-whatsapp btn-bloco" href="' + waLink(msg) + '" target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Quero este imóvel</a>' +
-      '<p class="aviso-pequeno" style="margin-top:14px">Valores a partir de, sujeitos a alteração e à aprovação de crédito. Condições do Minha Casa Minha Vida conforme regras vigentes.</p>' +
+      '<p class="aviso-pequeno" style="margin-top:14px">Valores a partir de, sujeitos a alteração e à aprovação de crédito.' +
+      (categoria(im) === 'mcmv' ? ' Condições do Minha Casa Minha Vida conforme regras vigentes.' : '') + '</p>' +
       '<a class="btn btn-contorno btn-bloco" style="margin-top:6px" href="simulacao.html">Fazer simulação gratuita</a>' +
       '</div></aside></div>';
     detalhe.innerHTML = html;

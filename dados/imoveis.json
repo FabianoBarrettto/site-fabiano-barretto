@@ -1,9 +1,11 @@
 {
-  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis', troque os dados e mantenha 'exemplo': false. Os 3 imóveis da lista são EXEMPLOS fictícios ('exemplo': true) e devem ser apagados quando entrar o primeiro imóvel real. O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
+  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis', troque os dados e mantenha 'exemplo': false. 'categoria' é 'mcmv' (Minha Casa Minha Vida) ou 'medio-alto' (médio e alto padrão). Os imóveis com 'exemplo': true são fictícios e devem ser apagados quando entrarem os reais da mesma categoria. O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
   "_modelo": {
     "id": "casa-2-quartos-umbu-01",
     "exemplo": false,
+    "categoria": "mcmv",
     "destaque": false,
+    "etiqueta": "Aceita FGTS",
     "titulo": "Casa de 2 quartos com pátio",
     "tipo": "Casa",
     "bairro": "Nome do bairro",
@@ -25,7 +27,9 @@
     {
       "id": "exemplo-casa-2-quartos",
       "exemplo": true,
+      "categoria": "mcmv",
       "destaque": true,
+      "etiqueta": "Pronto para morar",
       "titulo": "Casa de 2 quartos com pátio",
       "tipo": "Casa",
       "bairro": "Umbu",
@@ -45,7 +49,9 @@
     {
       "id": "exemplo-apartamento-2-quartos",
       "exemplo": true,
+      "categoria": "mcmv",
       "destaque": true,
+      "etiqueta": "Aceita FGTS",
       "titulo": "Apartamento de 2 quartos em condomínio",
       "tipo": "Apartamento",
       "bairro": "Passo do Feijó",
@@ -63,9 +69,33 @@
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     },
     {
+      "id": "exemplo-apartamento-na-planta",
+      "exemplo": true,
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Na planta",
+      "titulo": "Apartamento de 2 quartos na planta",
+      "tipo": "Apartamento",
+      "bairro": "Centro",
+      "cidade": "Alvorada",
+      "valorAPartir": 199000,
+      "quartos": 2,
+      "banheiros": 1,
+      "vagas": 1,
+      "areaM2": 46,
+      "descricao": "Exemplo de anúncio de lançamento: aqui entrariam a construtora, o prazo de entrega e as condições do empreendimento, sempre sujeitas à aprovação de crédito.",
+      "caracteristicas": ["Lançamento", "Vaga de garagem", "Condomínio com área de lazer", "Financiamento sujeito à aprovação de crédito"],
+      "imagens": [
+        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial na planta (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
       "id": "exemplo-sobrado-3-quartos",
       "exemplo": true,
+      "categoria": "mcmv",
       "destaque": true,
+      "etiqueta": "Aceita FGTS",
       "titulo": "Sobrado de 3 quartos",
       "tipo": "Sobrado",
       "bairro": "Americana",
@@ -79,6 +109,72 @@
       "caracteristicas": ["Três quartos", "Dois banheiros", "Garagem coberta", "Documentação conferida antes da venda"],
       "imagens": [
         { "src": "img/exemplo-sobrado.svg", "alt": "Ilustração de um sobrado de 3 quartos (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-casa-3-suites",
+      "exemplo": true,
+      "categoria": "medio-alto",
+      "destaque": true,
+      "etiqueta": "Alto padrão",
+      "titulo": "Casa de 3 suítes com piscina",
+      "tipo": "Casa",
+      "bairro": "Jardim Algarve",
+      "cidade": "Alvorada",
+      "valorAPartir": 690000,
+      "quartos": 3,
+      "banheiros": 4,
+      "vagas": 2,
+      "areaM2": 180,
+      "descricao": "Exemplo de anúncio de médio e alto padrão: aqui entrariam os diferenciais reais do imóvel, como acabamento, área de lazer e localização.",
+      "caracteristicas": ["Três suítes", "Piscina", "Espaço gourmet", "Garagem para 2 carros"],
+      "imagens": [
+        { "src": "img/exemplo-alto-padrao.svg", "alt": "Ilustração de uma casa moderna de alto padrão (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-apartamento-3-quartos-centro",
+      "exemplo": true,
+      "categoria": "medio-alto",
+      "destaque": true,
+      "etiqueta": "Médio padrão",
+      "titulo": "Apartamento de 3 quartos com suíte",
+      "tipo": "Apartamento",
+      "bairro": "Centro",
+      "cidade": "Alvorada",
+      "valorAPartir": 420000,
+      "quartos": 3,
+      "banheiros": 2,
+      "vagas": 2,
+      "areaM2": 98,
+      "descricao": "Exemplo de anúncio de apartamento de médio padrão, com mais espaço para a família. Os dados reais serão cadastrados pelo corretor.",
+      "caracteristicas": ["Suíte", "Sacada com churrasqueira", "Duas vagas", "Condomínio com elevador"],
+      "imagens": [
+        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial de médio padrão (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-sobrado-condominio",
+      "exemplo": true,
+      "categoria": "medio-alto",
+      "destaque": true,
+      "etiqueta": "Condomínio fechado",
+      "titulo": "Sobrado em condomínio fechado",
+      "tipo": "Sobrado",
+      "bairro": "Bela Vista",
+      "cidade": "Alvorada",
+      "valorAPartir": 520000,
+      "quartos": 3,
+      "banheiros": 3,
+      "vagas": 2,
+      "areaM2": 140,
+      "descricao": "Exemplo de anúncio de sobrado em condomínio fechado. Os dados reais serão cadastrados pelo corretor.",
+      "caracteristicas": ["Condomínio fechado", "Três quartos, um suíte", "Pátio privativo", "Garagem para 2 carros"],
+      "imagens": [
+        { "src": "img/exemplo-sobrado.svg", "alt": "Ilustração de um sobrado em condomínio (imagem de exemplo)" }
       ],
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     }
