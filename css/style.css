@@ -133,6 +133,29 @@ section{padding:48px 0}
 .busca button{height:52px;border:0;border-radius:14px;background:var(--marinho);color:#fff;font:700 1rem var(--fonte-texto);cursor:pointer}
 .busca button:hover{background:var(--marinho-2)}
 
+/* Link "Também atendo médio e alto padrão" no destaque */
+.link-alto{order:7;display:flex;gap:10px;align-items:center;justify-content:center;margin-top:4px;padding:14px 0 4px;border-top:1px solid #DCE4EC;font-size:.88rem;font-weight:600;color:var(--marinho);text-decoration:none}
+.link-alto:hover{color:var(--dourado-texto);text-decoration:underline}
+.ponto-dourado{width:8px;height:8px;border-radius:50%;background:var(--dourado);flex:none}
+
+/* Bloco de médio e alto padrão */
+.bloco-alto{background:#fff;border:1.5px solid #E8D9BD;border-radius:26px;padding:26px 0 24px;display:flex;flex-direction:column;gap:16px}
+/* No celular o botão vai para baixo dos cartões: .bloco-alto-topo vira "contents" e a ordem vem de "order" */
+.bloco-alto-topo{display:contents}
+.bloco-alto-texto{order:1;padding:0 20px;display:flex;flex-direction:column;gap:8px}
+.bloco-alto .faixa-imoveis{order:2}
+.bloco-alto-texto h2{margin:0;font-size:1.6rem}
+.bloco-alto-texto p{margin:0;font-size:.9rem;line-height:1.6;color:var(--texto-suave)}
+.eyebrow-linha{display:flex;gap:10px;align-items:center;color:var(--dourado-texto);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.eyebrow-linha::before{content:"";width:24px;height:1.5px;background:var(--dourado)}
+.btn-exclusivo{background:var(--marinho);color:var(--dourado-claro);order:3;margin:0 20px}
+.btn-exclusivo:hover{background:var(--marinho-2);color:var(--dourado-claro)}
+.bloco-alto .faixa-imoveis{margin:0;padding:4px 20px 8px}
+.bloco-alto .faixa-imoveis>*{flex-basis:250px}
+.card-alto{box-shadow:none;border:1.5px solid var(--borda);border-radius:20px}
+.card-alto .imovel-titulo{font-family:var(--fonte-titulo);font-size:1.12rem}
+.etiqueta-alto{background:var(--marinho);color:var(--dourado-claro)}
+
 /* Faixas MCMV */
 .faixas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
 .faixas li{background:#fff;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:2px;border:1.5px solid var(--borda)}
@@ -288,6 +311,20 @@ details p{color:var(--texto-suave)}
   .titulo-linha>h2,.titulo-linha>div{flex:0 1 auto}
   .faixa-imoveis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;overflow:visible;padding:0;margin:0}
   .deslize{display:none}
+  .link-alto{justify-content:flex-start;align-self:flex-start;font-size:.95rem;padding-top:16px}
+  .bloco-alto{padding:48px;border-radius:32px;gap:28px}
+  .bloco-alto-topo{display:flex;order:1;flex-direction:row;justify-content:space-between;align-items:flex-end;gap:32px}
+  .bloco-alto-texto{padding:0;max-width:680px;gap:10px}
+  .bloco-alto-texto h2{font-size:2.3rem}
+  .bloco-alto-texto p{font-size:1.06rem}
+  .eyebrow-linha{font-size:.8rem;gap:12px}
+  .eyebrow-linha::before{width:32px}
+  .btn-exclusivo{margin:0;flex:0 0 auto}
+  .bloco-alto .faixa-imoveis{padding:0}
+  .card-alto .imovel-foto{aspect-ratio:auto;height:230px}
+  .card-alto .imovel-titulo{font-size:1.3rem}
+  .card-alto .preco-linha{display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;padding-top:12px;border-top:1px solid #E8D9BD}
+  .card-alto .preco-linha .imovel-preco{margin:0}
   .filtros{grid-template-columns:repeat(3,1fr)}
   .bloco-sobre{grid-template-columns:300px 1fr;gap:48px;padding:48px;border-radius:32px}
   .foto-arco img{height:380px;border-radius:150px 150px 24px 24px}

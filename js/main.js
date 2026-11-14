@@ -62,15 +62,17 @@
     var info = [esc(im.bairro)];
     if (im.areaM2) info.push(esc(im.areaM2) + ' m²');
     if (im.quartos) info.push(esc(im.quartos) + (im.quartos > 1 ? ' quartos' : ' quarto'));
-    return '<a class="imovel-card" href="imovel.html?id=' + encodeURIComponent(im.id) + '">' +
+    var alto = categoria(im) === 'medio-alto';
+    var preco = '<p class="imovel-preco">a partir de <strong>' + brl(im.valorAPartir) + '</strong></p>' +
+      (im.exemplo ? '<span class="valor-exemplo">Valor de exemplo</span>' : '');
+    return '<a class="imovel-card' + (alto ? ' card-alto' : '') + '" href="imovel.html?id=' + encodeURIComponent(im.id) + '">' +
       '<div class="imovel-foto"><img src="' + esc(img.src) + '" alt="' + esc(img.alt) + '" loading="lazy" width="800" height="600">' +
-      (im.etiqueta ? '<span class="etiqueta">' + esc(im.etiqueta) + '</span>' : '') +
+      (im.etiqueta ? '<span class="etiqueta' + (alto ? ' etiqueta-alto' : '') + '">' + esc(im.etiqueta) + '</span>' : '') +
       (im.exemplo ? '<span class="selo selo-ilustrativa">Exemplo</span>' : '') + '</div>' +
       '<div class="imovel-corpo">' +
       '<h3 class="imovel-titulo">' + esc(im.titulo) + '</h3>' +
       '<span class="imovel-bairro">' + info.join(' · ') + '</span>' +
-      '<p class="imovel-preco">a partir de <strong>' + brl(im.valorAPartir) + '</strong></p>' +
-      (im.exemplo ? '<span class="valor-exemplo">Valor de exemplo</span>' : '') +
+      (alto ? '<div class="preco-linha">' + preco + '</div>' : preco) +
       '</div></a>';
   }
 
@@ -191,7 +193,7 @@
       '<div class="imovel-detalhe"><div>' +
       '<div class="galeria"><div class="galeria-principal">' +
       (imgs[0] ? '<img id="foto-principal" src="' + esc(imgs[0].src) + '" alt="' + esc(imgs[0].alt) + '" width="800" height="600">' : '') +
-      (im.etiqueta ? '<span class="etiqueta">' + esc(im.etiqueta) + '</span>' : '') +
+      (im.etiqueta ? '<span class="etiqueta' + (categoria(im) === 'medio-alto' ? ' etiqueta-alto' : '') + '">' + esc(im.etiqueta) + '</span>' : '') +
       (im.exemplo ? '<span class="selo selo-ilustrativa">Imagem ilustrativa</span>' : '') +
       '</div>';
     if (imgs.length > 1) {

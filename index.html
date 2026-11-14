@@ -75,6 +75,7 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
     <nav class="nav" id="menu" aria-label="Principal">
       <a href="imoveis.html">Imóveis</a>
+      <a href="index.html#alto-padrao">Alto padrão</a>
       <a href="como-funciona.html">Como funciona</a>
       <a href="simulacao.html">Simulação</a>
       <a href="sobre.html">Sobre</a>
@@ -94,6 +95,7 @@
           <a class="btn btn-whatsapp" href="simulacao.html"><img src="img/whatsapp.svg" alt="" width="22" height="22">Faça sua simulação gratuita</a>
         </div>
         <p class="aviso-pequeno">Sem compromisso. Sujeito à aprovação de crédito.</p>
+        <a class="link-alto" href="#alto-padrao"><span class="ponto-dourado" aria-hidden="true"></span><span class="topo-texto-curto">Também atendo médio e alto padrão →</span><span class="topo-texto-longo">Também atendo imóveis de médio e alto padrão →</span></a>
       </div>
       <div class="hero-foto">
         <picture>
@@ -113,9 +115,9 @@
           <div>
             <label for="b-categoria">Categoria</label>
             <select id="b-categoria" name="categoria">
-              <option value="">Todas</option>
               <option value="mcmv">Minha Casa Minha Vida</option>
               <option value="medio-alto">Médio e alto padrão</option>
+              <option value="">Todas</option>
             </select>
           </div>
           <div>
@@ -135,6 +137,7 @@
               <option value="300000">R$ 300 mil</option>
               <option value="500000">R$ 500 mil</option>
               <option value="800000">R$ 800 mil</option>
+              <option value="1500000">R$ 1,5 milhão</option>
             </select>
           </div>
           <div>
@@ -180,15 +183,18 @@
 
   <section id="alto-padrao" style="padding-top:0">
     <div class="container">
-      <div class="titulo-linha">
-        <div>
-          <h2>Médio e alto padrão</h2>
-          <p class="aviso-pequeno" style="margin:6px 0 0;font-size:.95rem">Casas e apartamentos com mais espaço e acabamento, para quem busca o próximo passo.</p>
+      <div class="bloco-alto">
+        <div class="bloco-alto-topo">
+          <div class="bloco-alto-texto">
+            <span class="eyebrow-linha">Médio e alto padrão</span>
+            <h2>Imóveis para quem busca mais espaço</h2>
+            <p>Casas e apartamentos maiores em Alvorada e na região, com atendimento reservado do início ao fim.</p>
+          </div>
+          <a class="btn btn-exclusivo" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Tenho%20interesse%20em%20im%C3%B3veis%20de%20m%C3%A9dio%20e%20alto%20padr%C3%A3o." target="_blank" rel="noopener">Atendimento exclusivo</a>
         </div>
-        <a class="link-seta" href="imoveis.html?categoria=medio-alto">Ver todos →</a>
-      </div>
-      <div class="faixa-imoveis tres" id="destaques-alto" aria-live="polite">
-        <p class="vazio">Carregando imóveis...</p>
+        <div class="faixa-imoveis tres" id="destaques-alto" aria-live="polite">
+          <p class="vazio">Carregando imóveis...</p>
+        </div>
       </div>
     </div>
   </section>
@@ -205,7 +211,6 @@
         <div style="display:flex;flex-direction:column;gap:18px">
           <h2>Quem é o seu corretor?</h2>
           <p>Sou corretor aqui em Alvorada e ajudo famílias a trocar o aluguel pela casa própria. Faço a simulação, organizo os documentos com você e acompanho o financiamento pela Caixa até a entrega das chaves.</p>
-          <p>Também atendo quem procura imóveis de médio e alto padrão.</p>
           <span class="creci-destaque">CRECI/RS 82351-F</span>
           <div class="acoes">
             <a class="btn btn-whatsapp" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site%20e%20quero%20conversar." target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Vamos conversar no WhatsApp</a>

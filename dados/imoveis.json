@@ -113,68 +113,68 @@
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     },
     {
-      "id": "exemplo-casa-3-suites",
-      "exemplo": true,
-      "categoria": "medio-alto",
-      "destaque": true,
-      "etiqueta": "Alto padrão",
-      "titulo": "Casa de 3 suítes com piscina",
-      "tipo": "Casa",
-      "bairro": "Jardim Algarve",
-      "cidade": "Alvorada",
-      "valorAPartir": 690000,
-      "quartos": 3,
-      "banheiros": 4,
-      "vagas": 2,
-      "areaM2": 180,
-      "descricao": "Exemplo de anúncio de médio e alto padrão: aqui entrariam os diferenciais reais do imóvel, como acabamento, área de lazer e localização.",
-      "caracteristicas": ["Três suítes", "Piscina", "Espaço gourmet", "Garagem para 2 carros"],
-      "imagens": [
-        { "src": "img/exemplo-alto-padrao.svg", "alt": "Ilustração de uma casa moderna de alto padrão (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-apartamento-3-quartos-centro",
+      "id": "exemplo-casa-3-dormitorios-suite",
       "exemplo": true,
       "categoria": "medio-alto",
       "destaque": true,
       "etiqueta": "Médio padrão",
-      "titulo": "Apartamento de 3 quartos com suíte",
-      "tipo": "Apartamento",
+      "titulo": "Casa 3 dormitórios com suíte",
+      "tipo": "Casa",
       "bairro": "Centro",
       "cidade": "Alvorada",
-      "valorAPartir": 420000,
+      "valorAPartir": 520000,
       "quartos": 3,
       "banheiros": 2,
       "vagas": 2,
-      "areaM2": 98,
-      "descricao": "Exemplo de anúncio de apartamento de médio padrão, com mais espaço para a família. Os dados reais serão cadastrados pelo corretor.",
-      "caracteristicas": ["Suíte", "Sacada com churrasqueira", "Duas vagas", "Condomínio com elevador"],
+      "areaM2": 140,
+      "descricao": "Exemplo de anúncio de médio padrão: aqui entrariam os diferenciais reais do imóvel, como acabamento, pátio e localização.",
+      "caracteristicas": ["Três dormitórios, um suíte", "Pátio", "Garagem para 2 carros", "Perto do comércio do Centro"],
       "imagens": [
-        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial de médio padrão (imagem de exemplo)" }
+        { "src": "img/exemplo-casa.svg", "alt": "Ilustração de uma casa de 3 dormitórios (imagem de exemplo)" }
       ],
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     },
     {
-      "id": "exemplo-sobrado-condominio",
+      "id": "exemplo-sobrado-com-piscina",
       "exemplo": true,
       "categoria": "medio-alto",
       "destaque": true,
-      "etiqueta": "Condomínio fechado",
-      "titulo": "Sobrado em condomínio fechado",
+      "etiqueta": "Alto padrão",
+      "titulo": "Sobrado com piscina",
       "tipo": "Sobrado",
+      "bairro": "Jardim Algarve",
+      "cidade": "Alvorada",
+      "valorAPartir": 890000,
+      "quartos": 3,
+      "banheiros": 4,
+      "vagas": 2,
+      "areaM2": 210,
+      "descricao": "Exemplo de anúncio de alto padrão: aqui entrariam os diferenciais reais do imóvel, como área de lazer, acabamento e localização.",
+      "caracteristicas": ["Piscina", "Três suítes", "Espaço gourmet", "Garagem para 2 carros"],
+      "imagens": [
+        { "src": "img/exemplo-alto-padrao.svg", "alt": "Ilustração de um sobrado moderno com piscina (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-apartamento-3-suites",
+      "exemplo": true,
+      "categoria": "medio-alto",
+      "destaque": true,
+      "etiqueta": "Alto padrão",
+      "titulo": "Apartamento 3 suítes",
+      "tipo": "Apartamento",
       "bairro": "Bela Vista",
       "cidade": "Alvorada",
-      "valorAPartir": 520000,
+      "valorAPartir": 1150000,
       "quartos": 3,
-      "banheiros": 3,
+      "banheiros": 4,
       "vagas": 2,
-      "areaM2": 140,
-      "descricao": "Exemplo de anúncio de sobrado em condomínio fechado. Os dados reais serão cadastrados pelo corretor.",
-      "caracteristicas": ["Condomínio fechado", "Três quartos, um suíte", "Pátio privativo", "Garagem para 2 carros"],
+      "areaM2": 128,
+      "descricao": "Exemplo de anúncio de apartamento de alto padrão. Os dados reais serão cadastrados pelo corretor.",
+      "caracteristicas": ["Três suítes", "Sacada com churrasqueira", "Duas vagas", "Condomínio com elevador"],
       "imagens": [
-        { "src": "img/exemplo-sobrado.svg", "alt": "Ilustração de um sobrado em condomínio (imagem de exemplo)" }
+        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial de alto padrão (imagem de exemplo)" }
       ],
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     }
