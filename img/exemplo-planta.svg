@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Planta ilustrativa de exemplo">
+<rect width="800" height="600" fill="#F4F8FB"/>
+<g fill="#fff" stroke="#14304F" stroke-width="6">
+<rect x="130" y="80" width="540" height="420"/>
+<line x1="130" y1="270" x2="400" y2="270"/><line x1="400" y1="80" x2="400" y2="270"/>
+<line x1="400" y1="330" x2="670" y2="330"/><line x1="530" y1="330" x2="530" y2="500"/>
+<line x1="400" y1="270" x2="400" y2="500"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#14304F" text-anchor="middle">
+<text x="265" y="180">Quarto 1</text><text x="535" y="200">Quarto 2</text>
+<text x="265" y="400">Sala e cozinha</text><text x="465" y="420">Banho</text><text x="600" y="420">Área</text>
+</g>
+<rect x="0" y="540" width="800" height="60" fill="#14304F"/>
+<text x="400" y="578" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" letter-spacing="2">PLANTA ILUSTRATIVA - EXEMPLO</text>
+</svg>

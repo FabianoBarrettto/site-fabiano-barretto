@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulação gratuita Minha Casa Minha Vida em Alvorada RS | Fabiano Barretto Imóveis</title>
+<meta name="description" content="Faça sua simulação gratuita do Minha Casa Minha Vida em Alvorada RS. Preencha nome, WhatsApp e renda e continue a conversa com o corretor Fabiano Barretto, CRECI/RS 82351-F.">
+<link rel="canonical" href="https://DOMINIO_A_DEFINIR/simulacao.html">
+<meta name="theme-color" content="#14304F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/simbolo.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Fabiano Barretto Imóveis">
+<meta property="og:title" content="Simulação gratuita Minha Casa Minha Vida | Fabiano Barretto Imóveis">
+<meta property="og:description" content="Descubra o que é possível para a sua família. Simulação gratuita pelo WhatsApp.">
+<meta property="og:url" content="https://DOMINIO_A_DEFINIR/simulacao.html">
+<meta property="og:image" content="https://DOMINIO_A_DEFINIR/img/og-imagem.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="marca" href="index.html" aria-label="Fabiano Barretto Imóveis, página inicial">
+      <img src="img/simbolo.svg" alt="" width="34" height="40">
+      <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="nav" id="menu" aria-label="Principal">
+      <a href="index.html">Início</a>
+      <a href="imoveis.html">Imóveis</a>
+      <a href="como-funciona.html">Como funciona</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="simulacao.html" aria-current="page">Simulação</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/5551985738049" target="_blank" rel="noopener">Fale comigo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section>
+    <div class="container" style="max-width:680px">
+      <div class="titulo-secao">
+        <span class="eyebrow">Sem compromisso</span>
+        <h1>Simulação gratuita do Minha Casa Minha Vida</h1>
+        <hr class="linha-dourada">
+        <p>Preencha os dados abaixo. Ao enviar, o WhatsApp abre com a sua mensagem pronta e eu continuo a conversa por lá.</p>
+      </div>
+
+      <form class="form-card" id="form-simulacao" novalidate>
+        <div class="campo">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+          <div class="campo-erro" id="erro-nome">Digite seu nome.</div>
+        </div>
+        <div class="campo">
+          <label for="telefone">Seu WhatsApp com DDD</label>
+          <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(51) 99999-9999" required aria-describedby="erro-telefone">
+          <div class="campo-erro" id="erro-telefone">Digite um WhatsApp válido, com DDD.</div>
+        </div>
+        <div class="campo">
+          <label for="renda">Renda familiar mensal aproximada</label>
+          <select id="renda" name="renda" required aria-describedby="erro-renda">
+            <option value="">Selecione</option>
+            <option>Até R$ 3.200</option>
+            <option>De R$ 3.200 a R$ 5.000</option>
+            <option>De R$ 5.000 a R$ 9.600</option>
+            <option>De R$ 9.600 a R$ 13.000</option>
+            <option>Acima de R$ 13.000</option>
+            <option>Prefiro conversar no WhatsApp</option>
+          </select>
+          <div class="campo-erro" id="erro-renda">Escolha uma opção.</div>
+        </div>
+        <div class="campo">
+          <div class="consentimento">
+            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+            <label for="consentimento">Li e concordo com o <a href="privacidade.html" target="_blank">aviso de privacidade</a>. Estou ciente de que meus dados serão usados apenas para este atendimento.</label>
+          </div>
+          <div class="campo-erro" id="erro-consentimento">Para continuar, marque a caixa acima.</div>
+        </div>
+        <button class="btn btn-whatsapp btn-bloco" type="submit"><img src="img/whatsapp.svg" alt="" width="22" height="22">Enviar e continuar no WhatsApp</button>
+        <p class="aviso-pequeno" style="margin:14px 0 0">Seus dados não ficam guardados neste site: eles só vão na mensagem do WhatsApp que você mesmo envia. Simulação sujeita à aprovação de crédito.</p>
+      </form>
+
+      <div id="confirmacao" class="caixa-aviso" hidden tabindex="-1" role="status">
+        <strong>Quase lá!</strong> O WhatsApp deve ter aberto em outra aba. Se não abriu, <a href="https://wa.me/5551985738049" target="_blank" rel="noopener"><strong>clique aqui para abrir a conversa</strong></a>.
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grade">
+      <div class="footer-marca">
+        <a class="marca" href="index.html">
+          <img src="img/simbolo.svg" alt="" width="40" height="48">
+          <span class="marca-texto"><span class="marca-nome">Fabiano Barretto</span><span class="marca-sub">IMÓVEIS</span></span>
+        </a>
+        <p style="margin-top:14px">Minha Casa Minha Vida em Alvorada RS e região. Vamos juntos conquistar sua casa própria.</p>
+        <p><strong>CRECI/RS 82351-F</strong></p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <ul class="footer-lista">
+          <li><a href="https://wa.me/5551985738049" target="_blank" rel="noopener">WhatsApp (51) 98573-8049</a></li>
+          <li><a href="https://instagram.com/fabianobarrettoimoveis" target="_blank" rel="noopener">Instagram @fabianobarrettoimoveis</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100082310847759" target="_blank" rel="noopener">Facebook Fabiano Barretto Imóveis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Navegue</h2>
+        <ul class="footer-lista">
+          <li><a href="imoveis.html">Imóveis</a></li>
+          <li><a href="como-funciona.html">Como funciona o MCMV</a></li>
+          <li><a href="simulacao.html">Simulação gratuita</a></li>
+          <li><a href="privacidade.html">Aviso de privacidade</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">&copy; <span id="ano">2026</span> Fabiano Barretto Imóveis · CRECI/RS 82351-F. Este é um site de um corretor de imóveis e não é um site oficial do governo nem da Caixa. Condições do Minha Casa Minha Vida sujeitas às regras vigentes e à aprovação de crédito.</p>
+  </div>
+</footer>
+
+<a class="wa-flutuante" href="https://wa.me/5551985738049?text=Ol%C3%A1%2C%20Fabiano!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener" aria-label="Fale comigo no WhatsApp"><img src="img/whatsapp.svg" alt="" width="32" height="32"></a>
+<script src="js/main.js" defer></script>
+</body>
+</html>

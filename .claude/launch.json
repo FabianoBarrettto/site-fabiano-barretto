@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site-local",
+      "runtimeExecutable": "powershell.exe",
+      "runtimeArgs": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "C:\\Users\\Gamer\\AppData\\Local\\Temp\\claude\\e8226653b09b5e4f\\60bb3ecc-ff4a-4fbc-bbbf-772ad6c78937\\scratchpad\\servidor.ps1", "-Raiz", "C:\\Users\\Gamer\\OneDrive\\Documentos\\site-fabiano-barretto", "-Porta", "8765"],
+      "port": 8765
+    }
+  ]
+}

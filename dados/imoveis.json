@@ -1,0 +1,65 @@
+{
+  "_leia-me": "Cadastro de imóveis do site. Para adicionar um imóvel, copie um bloco da lista 'imoveis', troque os dados e coloque 'exemplo': false. Os 3 imóveis abaixo são EXEMPLOS fictícios (valores, bairros e fotos ilustrativas) e devem ser removidos quando houver imóveis reais. Campos: id (sem espaços, usado na URL), titulo, tipo, bairro, cidade, valorAPartir (número em reais), quartos, banheiros, vagas, areaM2, destaque (true aparece na página inicial), descricao, caracteristicas (lista), imagens (lista com src e alt), planta (src e alt, opcional), exemplo (true mostra o selo Exemplo).",
+  "imoveis": [
+    {
+      "id": "exemplo-casa-2-quartos",
+      "exemplo": true,
+      "destaque": true,
+      "titulo": "Casa de 2 quartos com pátio",
+      "tipo": "Casa",
+      "bairro": "Umbu",
+      "cidade": "Alvorada",
+      "valorAPartir": 195000,
+      "quartos": 2,
+      "banheiros": 1,
+      "vagas": 1,
+      "areaM2": 48,
+      "descricao": "Exemplo de como o anúncio de uma casa aparecerá no site: texto curto, claro e com as informações que a família precisa para decidir se quer conhecer o imóvel.",
+      "caracteristicas": ["Pátio com espaço para garagem", "Sala e cozinha integradas", "Perto de comércio e transporte", "Possibilidade de uso do FGTS (conforme regras vigentes)"],
+      "imagens": [
+        { "src": "img/exemplo-casa.svg", "alt": "Ilustração de uma casa térrea de 2 quartos (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-apartamento-2-quartos",
+      "exemplo": true,
+      "destaque": true,
+      "titulo": "Apartamento de 2 quartos em condomínio",
+      "tipo": "Apartamento",
+      "bairro": "Passo do Feijó",
+      "cidade": "Alvorada",
+      "valorAPartir": 175000,
+      "quartos": 2,
+      "banheiros": 1,
+      "vagas": 1,
+      "areaM2": 43,
+      "descricao": "Exemplo de anúncio de apartamento: aqui entrariam as informações reais do empreendimento, prazo de entrega e condições, sempre sujeitas à aprovação de crédito.",
+      "caracteristicas": ["Condomínio com portaria", "Vaga de garagem", "Área de lazer", "Financiamento sujeito à aprovação de crédito"],
+      "imagens": [
+        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    },
+    {
+      "id": "exemplo-sobrado-3-quartos",
+      "exemplo": true,
+      "destaque": true,
+      "titulo": "Sobrado de 3 quartos",
+      "tipo": "Sobrado",
+      "bairro": "Americana",
+      "cidade": "Alvorada",
+      "valorAPartir": 260000,
+      "quartos": 3,
+      "banheiros": 2,
+      "vagas": 1,
+      "areaM2": 72,
+      "descricao": "Exemplo de anúncio de sobrado para famílias maiores. Os dados reais serão cadastrados pelo corretor.",
+      "caracteristicas": ["Três quartos", "Dois banheiros", "Garagem coberta", "Documentação conferida antes da venda"],
+      "imagens": [
+        { "src": "img/exemplo-sobrado.svg", "alt": "Ilustração de um sobrado de 3 quartos (imagem de exemplo)" }
+      ],
+      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
+    }
+  ]
+}

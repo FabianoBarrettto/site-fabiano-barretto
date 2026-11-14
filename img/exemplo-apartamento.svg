@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustração de um prédio residencial">
+<defs><linearGradient id="a" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe2f3"/><stop offset="1" stop-color="#F4F8FB"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#a)"/>
+<rect y="500" width="800" height="100" fill="#9ec7a6"/>
+<rect y="490" width="800" height="14" fill="#c9d3dc"/>
+<rect x="230" y="90" width="340" height="400" fill="#f7efe0"/>
+<rect x="230" y="90" width="340" height="26" fill="#14304F"/>
+<g fill="#bcd8ee" stroke="#14304F" stroke-width="5">
+<rect x="262" y="140" width="56" height="60"/><rect x="372" y="140" width="56" height="60"/><rect x="482" y="140" width="56" height="60"/>
+<rect x="262" y="230" width="56" height="60"/><rect x="372" y="230" width="56" height="60"/><rect x="482" y="230" width="56" height="60"/>
+<rect x="262" y="320" width="56" height="60"/><rect x="372" y="320" width="56" height="60"/><rect x="482" y="320" width="56" height="60"/>
+</g>
+<g fill="#B8863F"><rect x="256" y="200" width="68" height="8"/><rect x="366" y="200" width="68" height="8"/><rect x="476" y="200" width="68" height="8"/><rect x="256" y="290" width="68" height="8"/><rect x="366" y="290" width="68" height="8"/><rect x="476" y="290" width="68" height="8"/></g>
+<rect x="360" y="410" width="80" height="80" rx="4" fill="#B8863F"/>
+<rect x="150" y="420" width="12" height="70" fill="#7a5a30"/><circle cx="156" cy="400" r="42" fill="#5fa56f"/>
+<rect x="640" y="430" width="12" height="60" fill="#7a5a30"/><circle cx="646" cy="412" r="36" fill="#5fa56f"/>
+<rect x="0" y="560" width="800" height="40" fill="#14304F" opacity=".9"/>
+<text x="400" y="587" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" font-weight="700" fill="#fff" letter-spacing="2">IMAGEM ILUSTRATIVA - EXEMPLO</text>
+</svg>
