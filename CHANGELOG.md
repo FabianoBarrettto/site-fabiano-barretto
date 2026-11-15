@@ -29,3 +29,8 @@ Responsável: agente dev-site (subordinado ao coordenador).
 
 ## 2026-11-15
 - `CLAUDE.md` e `.claude/launch.json` saíram do repositório público (continuam só na pasta local) e entraram no `.gitignore`, com aprovação do usuário. Nenhuma página do site mudou.
+- **Primeiro imóvel real**: "Apartamento de 1 dormitório", Jardim Aparecida, Alvorada (MCMV, a partir de R$ 155.000, 1 dormitório, 1 banheiro, vaga rotativa, 28 a 32 m², etiqueta "Últimas unidades"), no lugar do exemplo "Apartamento de 2 quartos em condomínio". Os outros 6 continuam marcados como exemplo. Endereço não publicado.
+- 6 fotos do usuário (HEIC) convertidas para WebP 1200×900 (27–95 KB), recortadas em 4:3, **sem metadados** (EXIF/GPS conferidos), com marca d'água discreta do logo (canto inferior direito, 18% da largura, 45% de opacidade). Na fachada, o número do prédio foi borrado. Originais guardados no repositório privado do escritório (`recebidos/2026-11-15-imovel-jardim-aparecida/originais/`), fora do site.
+- `js/main.js`: `vagas` aceita texto (aparece como "Garagem"), `areaM2` aceita faixa ("28 a 32"; schema com `minValue`/`maxValue`) e novo campo `nota` em letra pequena abaixo das características ("*Sujeito à análise de crédito."). `COMO-CADASTRAR-IMOVEL.md` atualizado. URL do imóvel no `sitemap.xml`.
+- Correção: as miniaturas da galeria agora quebram linha (`flex-wrap`); com 6 fotos causavam rolagem horizontal no celular.
+- Verificado em 375 px e 1366 px: card na página inicial, página de imóveis, busca por bairro (Jardim Aparecida → 1 resultado) e página do imóvel; sem rolagem horizontal, todas as fotos carregando, CRECI em todas, console sem erros.

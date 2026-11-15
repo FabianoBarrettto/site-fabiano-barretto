@@ -168,6 +168,16 @@
     }).catch(function () { detalhe.innerHTML = msgErro(); });
   }
 
+  /* Área: número (48) ou faixa em texto ("28 a 32") */
+  function areaSchema(a) {
+    if (!a) return undefined;
+    if (typeof a === 'number') return { '@type': 'QuantitativeValue', value: a, unitCode: 'MTK' };
+    var n = String(a).match(/\d+([.,]\d+)?/g);
+    if (!n) return undefined;
+    n = n.map(function (x) { return Number(x.replace(',', '.')); });
+    return n.length > 1 ? { '@type': 'QuantitativeValue', minValue: n[0], maxValue: n[n.length - 1], unitCode: 'MTK' } : { '@type': 'QuantitativeValue', value: n[0], unitCode: 'MTK' };
+  }
+
   function renderDetalhe(im) {
     var imgs = im.imagens || [];
     var msg = 'Olá, Fabiano! Tenho interesse no imóvel "' + im.titulo + '" (' + im.bairro + ', ' + im.cidade + ') que vi no seu site. Ref.: ' + im.id + '. Pode me passar mais informações?';
@@ -186,7 +196,7 @@
     var fichas = [];
     if (im.quartos) fichas.push(['Quartos', im.quartos]);
     if (im.banheiros) fichas.push(['Banheiros', im.banheiros]);
-    if (im.vagas) fichas.push(['Vagas', im.vagas]);
+    if (im.vagas) fichas.push(typeof im.vagas === 'string' ? ['Garagem', im.vagas] : ['Vagas', im.vagas]);
     if (im.areaM2) fichas.push(['Área', im.areaM2 + ' m²']);
 
     var html = '<p class="migalhas"><a href="index.html">Início</a> › <a href="imoveis.html">Imóveis</a> › ' + esc(im.titulo) + '</p>' +
@@ -209,6 +219,7 @@
     if (im.caracteristicas && im.caracteristicas.length) {
       html += '<h3>Características</h3><ul class="lista-check">' + im.caracteristicas.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul>';
     }
+    if (im.nota) html += '<p class="aviso-pequeno">' + esc(im.nota) + '</p>';
     if (im.planta) {
       html += '<h3 style="margin-top:28px">Planta</h3><img src="' + esc(im.planta.src) + '" alt="' + esc(im.planta.alt) + '" loading="lazy" width="800" height="600" style="border-radius:14px;border:1px solid var(--borda)">';
     }
@@ -243,7 +254,7 @@
         name: im.titulo,
         description: im.descricao,
         numberOfRooms: im.quartos,
-        floorSize: im.areaM2 ? { '@type': 'QuantitativeValue', value: im.areaM2, unitCode: 'MTK' } : undefined,
+        floorSize: areaSchema(im.areaM2),
         address: { '@type': 'PostalAddress', addressLocality: im.cidade, addressRegion: 'RS', addressCountry: 'BR', streetAddress: im.bairro },
         image: imgs.length ? imgs[0].src : undefined
       };

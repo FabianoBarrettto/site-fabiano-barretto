@@ -25,6 +25,33 @@
   },
   "imoveis": [
     {
+      "id": "apartamento-1-dormitorio-jardim-aparecida-01",
+      "exemplo": false,
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Últimas unidades",
+      "titulo": "Apartamento de 1 dormitório",
+      "tipo": "Apartamento",
+      "bairro": "Jardim Aparecida",
+      "cidade": "Alvorada",
+      "valorAPartir": 155000,
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "Vaga rotativa",
+      "areaM2": "28 a 32",
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro com box instalado e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Estrada Frederico Dihl, próximo a mercado, ponto de ônibus e academia.",
+      "caracteristicas": ["Até sem entrada*", "Piso laminado no dormitório", "Box no banheiro", "Em fase de finalização de obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "nota": "*Sujeito à análise de crédito.",
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "alt": "Sala com cozinha americana do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp", "alt": "Sala e cozinha com janela e piso cerâmico claro" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Banheiro com box de vidro instalado" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Sala integrada à cozinha, vista a partir da janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Dormitório com piso laminado e janela com persiana" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "alt": "Fachada do prédio do empreendimento" }
+      ]
+    },
+    {
       "id": "exemplo-casa-2-quartos",
       "exemplo": true,
       "categoria": "mcmv",
@@ -43,28 +70,6 @@
       "caracteristicas": ["Pátio com espaço para garagem", "Sala e cozinha integradas", "Perto de comércio e transporte", "Possibilidade de uso do FGTS (conforme regras vigentes)"],
       "imagens": [
         { "src": "img/exemplo-casa.svg", "alt": "Ilustração de uma casa térrea de 2 quartos (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-apartamento-2-quartos",
-      "exemplo": true,
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Aceita FGTS",
-      "titulo": "Apartamento de 2 quartos em condomínio",
-      "tipo": "Apartamento",
-      "bairro": "Passo do Feijó",
-      "cidade": "Alvorada",
-      "valorAPartir": 175000,
-      "quartos": 2,
-      "banheiros": 1,
-      "vagas": 1,
-      "areaM2": 43,
-      "descricao": "Exemplo de anúncio de apartamento: aqui entrariam as informações reais do empreendimento, prazo de entrega e condições, sempre sujeitas à aprovação de crédito.",
-      "caracteristicas": ["Condomínio com portaria", "Vaga de garagem", "Área de lazer", "Financiamento sujeito à aprovação de crédito"],
-      "imagens": [
-        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial (imagem de exemplo)" }
       ],
       "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     },

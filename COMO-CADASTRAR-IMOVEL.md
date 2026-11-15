@@ -8,7 +8,7 @@ Todos os imóveis ficam em **`dados/imoveis.json`**. Não é preciso mexer no HT
 |---|---|
 | Pasta | `img/imoveis/<id-do-imovel>/` (ex.: `img/imoveis/casa-2-quartos-umbu-01/`) |
 | Nomes | `01.webp`, `02.webp`, … (a `01` é a capa) e `planta.webp` |
-| Formato | **WebP**, qualidade ~80 |
+| Formato | **WebP**, qualidade ~80, sem metadados (EXIF/GPS), com a marca d'água do logo no canto inferior direito |
 | Tamanho | **1200 × 900 px** (proporção 4:3, deitada) |
 | Peso | até **200 KB** cada (ideal 80–150 KB) |
 | Quantidade | 4 a 10 fotos: fachada primeiro, depois sala, cozinha, quartos, banheiro, área externa |
@@ -28,8 +28,9 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 | `tipo` | Casa, Apartamento ou Sobrado | sim |
 | `bairro` / `cidade` | bairro e cidade (o filtro de bairro usa esse nome, então escreva sempre igual) | sim |
 | `valorAPartir` | número em reais, sem pontos (ex.: `195000`) | sim |
-| `quartos`, `banheiros`, `vagas` | números | sim |
-| `areaM2` | área privativa em m² (número) | sim |
+| `quartos`, `banheiros`, `vagas` | números. `vagas` também aceita texto, ex.: `"Vaga rotativa"` (aparece como "Garagem") | sim |
+| `areaM2` | área privativa em m²: número (`48`) ou faixa em texto (`"28 a 32"`) | sim |
+| `nota` | observação em letra pequena abaixo das características, ex.: `"*Sujeito à análise de crédito."` | não |
 | `descricao` | 2 a 4 frases | sim |
 | `caracteristicas` | lista curta de pontos fortes | sim |
 | `imagens` | lista com `src` (caminho da foto) e `alt` (descrição da foto para quem não enxerga) | sim |
