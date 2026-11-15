@@ -1,8 +1,7 @@
 {
-  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis', troque os dados e mantenha 'exemplo': false. 'categoria' é 'mcmv' (Minha Casa Minha Vida) ou 'medio-alto' (médio e alto padrão). Os imóveis com 'exemplo': true são fictícios e devem ser apagados quando entrarem os reais da mesma categoria. O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
+  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis' e troque os dados. 'categoria' é 'mcmv' (Minha Casa Minha Vida) ou 'medio-alto' (médio e alto padrão). O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
   "_modelo": {
     "id": "casa-2-quartos-umbu-01",
-    "exemplo": false,
     "categoria": "mcmv",
     "destaque": false,
     "etiqueta": "Aceita FGTS",
@@ -26,7 +25,6 @@
   "imoveis": [
     {
       "id": "apartamento-1-dormitorio-jardim-aparecida-01",
-      "exemplo": false,
       "categoria": "mcmv",
       "destaque": true,
       "etiqueta": "Últimas unidades",
@@ -43,145 +41,13 @@
       "caracteristicas": ["Até sem entrada*", "Piso laminado no dormitório", "Box no banheiro", "Em fase de finalização de obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
       "nota": "*Sujeito à análise de crédito.",
       "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "alt": "Sala com cozinha americana do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp", "alt": "Sala e cozinha com janela e piso cerâmico claro" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Banheiro com box de vidro instalado" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Sala integrada à cozinha, vista a partir da janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Dormitório com piso laminado e janela com persiana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "alt": "Fachada do prédio do empreendimento" }
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp", "alt": "Sala com cozinha americana" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Sala e cozinha com janela e piso cerâmico claro" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Banheiro com box de vidro instalado" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Sala integrada à cozinha, vista a partir da janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "alt": "Dormitório com piso laminado e janela com persiana" }
       ]
-    },
-    {
-      "id": "exemplo-casa-2-quartos",
-      "exemplo": true,
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Pronto para morar",
-      "titulo": "Casa de 2 quartos com pátio",
-      "tipo": "Casa",
-      "bairro": "Umbu",
-      "cidade": "Alvorada",
-      "valorAPartir": 195000,
-      "quartos": 2,
-      "banheiros": 1,
-      "vagas": 1,
-      "areaM2": 48,
-      "descricao": "Exemplo de como o anúncio de uma casa aparecerá no site: texto curto, claro e com as informações que a família precisa para decidir se quer conhecer o imóvel.",
-      "caracteristicas": ["Pátio com espaço para garagem", "Sala e cozinha integradas", "Perto de comércio e transporte", "Possibilidade de uso do FGTS (conforme regras vigentes)"],
-      "imagens": [
-        { "src": "img/exemplo-casa.svg", "alt": "Ilustração de uma casa térrea de 2 quartos (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-apartamento-na-planta",
-      "exemplo": true,
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Na planta",
-      "titulo": "Apartamento de 2 quartos na planta",
-      "tipo": "Apartamento",
-      "bairro": "Centro",
-      "cidade": "Alvorada",
-      "valorAPartir": 199000,
-      "quartos": 2,
-      "banheiros": 1,
-      "vagas": 1,
-      "areaM2": 46,
-      "descricao": "Exemplo de anúncio de lançamento: aqui entrariam a construtora, o prazo de entrega e as condições do empreendimento, sempre sujeitas à aprovação de crédito.",
-      "caracteristicas": ["Lançamento", "Vaga de garagem", "Condomínio com área de lazer", "Financiamento sujeito à aprovação de crédito"],
-      "imagens": [
-        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial na planta (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-sobrado-3-quartos",
-      "exemplo": true,
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Aceita FGTS",
-      "titulo": "Sobrado de 3 quartos",
-      "tipo": "Sobrado",
-      "bairro": "Americana",
-      "cidade": "Alvorada",
-      "valorAPartir": 260000,
-      "quartos": 3,
-      "banheiros": 2,
-      "vagas": 1,
-      "areaM2": 72,
-      "descricao": "Exemplo de anúncio de sobrado para famílias maiores. Os dados reais serão cadastrados pelo corretor.",
-      "caracteristicas": ["Três quartos", "Dois banheiros", "Garagem coberta", "Documentação conferida antes da venda"],
-      "imagens": [
-        { "src": "img/exemplo-sobrado.svg", "alt": "Ilustração de um sobrado de 3 quartos (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-casa-3-dormitorios-suite",
-      "exemplo": true,
-      "categoria": "medio-alto",
-      "destaque": true,
-      "etiqueta": "Médio padrão",
-      "titulo": "Casa 3 dormitórios com suíte",
-      "tipo": "Casa",
-      "bairro": "Centro",
-      "cidade": "Alvorada",
-      "valorAPartir": 520000,
-      "quartos": 3,
-      "banheiros": 2,
-      "vagas": 2,
-      "areaM2": 140,
-      "descricao": "Exemplo de anúncio de médio padrão: aqui entrariam os diferenciais reais do imóvel, como acabamento, pátio e localização.",
-      "caracteristicas": ["Três dormitórios, um suíte", "Pátio", "Garagem para 2 carros", "Perto do comércio do Centro"],
-      "imagens": [
-        { "src": "img/exemplo-casa.svg", "alt": "Ilustração de uma casa de 3 dormitórios (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-sobrado-com-piscina",
-      "exemplo": true,
-      "categoria": "medio-alto",
-      "destaque": true,
-      "etiqueta": "Alto padrão",
-      "titulo": "Sobrado com piscina",
-      "tipo": "Sobrado",
-      "bairro": "Jardim Algarve",
-      "cidade": "Alvorada",
-      "valorAPartir": 890000,
-      "quartos": 3,
-      "banheiros": 4,
-      "vagas": 2,
-      "areaM2": 210,
-      "descricao": "Exemplo de anúncio de alto padrão: aqui entrariam os diferenciais reais do imóvel, como área de lazer, acabamento e localização.",
-      "caracteristicas": ["Piscina", "Três suítes", "Espaço gourmet", "Garagem para 2 carros"],
-      "imagens": [
-        { "src": "img/exemplo-alto-padrao.svg", "alt": "Ilustração de um sobrado moderno com piscina (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
-    },
-    {
-      "id": "exemplo-apartamento-3-suites",
-      "exemplo": true,
-      "categoria": "medio-alto",
-      "destaque": true,
-      "etiqueta": "Alto padrão",
-      "titulo": "Apartamento 3 suítes",
-      "tipo": "Apartamento",
-      "bairro": "Bela Vista",
-      "cidade": "Alvorada",
-      "valorAPartir": 1150000,
-      "quartos": 3,
-      "banheiros": 4,
-      "vagas": 2,
-      "areaM2": 128,
-      "descricao": "Exemplo de anúncio de apartamento de alto padrão. Os dados reais serão cadastrados pelo corretor.",
-      "caracteristicas": ["Três suítes", "Sacada com churrasqueira", "Duas vagas", "Condomínio com elevador"],
-      "imagens": [
-        { "src": "img/exemplo-apartamento.svg", "alt": "Ilustração de um prédio residencial de alto padrão (imagem de exemplo)" }
-      ],
-      "planta": { "src": "img/exemplo-planta.svg", "alt": "Planta ilustrativa de exemplo" }
     }
   ]
 }

@@ -364,3 +364,5 @@ details p{color:var(--texto-suave)}
   .bloco-sobre{grid-template-columns:340px 1fr;gap:56px;padding:56px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+.faixa-imoveis[hidden]{display:none}
+.deslize[hidden]{display:none}

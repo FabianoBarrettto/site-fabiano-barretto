@@ -20,7 +20,6 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 | Campo | O que colocar | Obrigatório |
 |---|---|---|
 | `id` | identificador sem espaços nem acentos, usado no endereço (`imovel.html?id=...`) e no nome da pasta de fotos | sim |
-| `exemplo` | sempre `false` para imóvel real | sim |
 | `categoria` | `mcmv` (Minha Casa Minha Vida) ou `medio-alto` (médio e alto padrão). Define em qual faixa da página inicial e em qual filtro o imóvel aparece | sim |
 | `destaque` | `true` para aparecer na página inicial (até 4 do MCMV e 3 de médio e alto padrão) | sim |
 | `etiqueta` | texto curto que aparece no canto da foto, ex.: "Aceita FGTS", "Pronto para morar", "Na planta", "Condomínio fechado" | não |
@@ -40,6 +39,6 @@ Valores são sempre "a partir de" e o site já mostra "sujeito à aprovação de
 
 ## 3. Depois de cadastrar
 
-1. Quando entrar o primeiro imóvel real de uma categoria, apague os blocos com `"exemplo": true` dessa categoria (4 do MCMV e 3 de médio e alto padrão). Quando não sobrar nenhum exemplo, apague também as imagens `img/exemplo-*.svg`.
+1. O site só mostra imóveis reais. Se uma categoria ficar sem imóveis, a página inicial esconde a faixa de médio e alto padrão (fica o texto com o botão "Atendimento exclusivo") e mostra uma mensagem com o WhatsApp na faixa do MCMV, na busca e na página de imóveis. Para tirar um imóvel vendido, apague o bloco dele, a pasta de fotos e a URL do `sitemap.xml`.
 2. Adicione a URL do imóvel no `sitemap.xml` (`https://fabianobarrettoimoveis.com.br/imovel.html?id=<id>`).
 3. Confira no navegador (celular e computador), registre no `CHANGELOG.md` e sincronize com o GitHub. **Cada envio vai direto para o ar.**
