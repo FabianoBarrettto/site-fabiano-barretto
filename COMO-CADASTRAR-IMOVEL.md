@@ -26,7 +26,7 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 
 | Mini-player | `img/imoveis/<id>/video-mini.mp4`: 360×640, 15 a 20 s dos melhores trechos (sem abertura nem cartão final), sem áudio, até ~3 MB. Ex.: `ffmpeg -i video.mp4 -filter_complex "[0:v]trim=1.5:11.5,setpts=PTS-STARTPTS[a];[0:v]trim=16:24,setpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=1,scale=360:640[v]" -map "[v]" -an -c:v libx264 -crf 27 -movflags +faststart -map_metadata -1 video-mini.mp4` |
 
-Com `mini`, a página do imóvel mostra um mini-player no canto inferior esquerdo, sem som e em loop, que abre o vídeo completo ao ser tocado. Ele pode ser fechado no X e não roda sozinho para quem pede menos movimento ou economia de dados. A seção "Vídeo do imóvel" abaixo da galeria não toca sozinha e só baixa o vídeo quando a pessoa aperta o play.
+**Padrão para todo imóvel com vídeo** (aprovado pelo usuário em 2026-11-15): o mini-player é automático. Basta preencher `video` com `arquivo`, `poster` e `mini`. O Designer entrega `site.mp4`, `poster.jpg` e, de preferência, o `video-mini.mp4`; se o mini não vier, gere-o com o comando acima, escolhendo os trechos. Com `mini`, a página do imóvel mostra um mini-player no canto inferior esquerdo, sem som e em loop, que abre o vídeo completo ao ser tocado. Ele pode ser fechado no X e não roda sozinho para quem pede menos movimento ou economia de dados. A seção "Vídeo do imóvel" abaixo da galeria não toca sozinha e só baixa o vídeo quando a pessoa aperta o play.
 
 ## 2. Dados (copie o bloco `_modelo` para dentro da lista `imoveis`)
 
