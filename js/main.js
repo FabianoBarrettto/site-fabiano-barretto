@@ -186,6 +186,7 @@
         return;
       }
       renderDetalhe(im);
+      miniVideo(im);
     }).catch(function () { detalhe.innerHTML = msgErro(); });
   }
 
@@ -197,6 +198,73 @@
     if (!n) return undefined;
     n = n.map(function (x) { return Number(x.replace(',', '.')); });
     return n.length > 1 ? { '@type': 'QuantitativeValue', minValue: n[0], maxValue: n[n.length - 1], unitCode: 'MTK' } : { '@type': 'QuantitativeValue', value: n[0], unitCode: 'MTK' };
+  }
+
+  /* Mini-player do vídeo: pequeno, no canto inferior esquerdo (o WhatsApp fica à direita), sem som e em loop.
+     Ao tocar, abre o vídeo completo num modal com controles. */
+  function miniVideo(im) {
+    var v = im.video;
+    if (!v || !v.mini || !v.arquivo) return;
+    var chave = 'mini-video-fechado:' + im.id;
+    try { if (sessionStorage.getItem(chave)) return; } catch (e) { /* sem sessionStorage: segue normal */ }
+
+    function iniciar() {
+      var estatico = (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) ||
+        (navigator.connection && navigator.connection.saveData);
+      var box = document.createElement('div');
+      box.className = 'mini-video';
+      box.innerHTML = (estatico ?
+        '<img class="mini-midia" src="' + esc(v.poster || '') + '" alt=""><span class="mini-play" aria-hidden="true">▶</span>' :
+        '<video class="mini-midia" muted autoplay loop playsinline preload="auto"' + (v.poster ? ' poster="' + esc(v.poster) + '"' : '') + ' aria-hidden="true">' +
+          '<source src="' + esc(v.mini) + '" type="video/mp4"></video>') +
+        '<button type="button" class="mini-btn mini-expandir" aria-label="Assistir ao vídeo do imóvel em tamanho grande">' +
+          '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M4 4h6v2H6v4H4zm10 0h6v6h-2V6h-4zM4 14h2v4h4v2H4zm14 0h2v6h-6v-2h4z"/></svg></button>' +
+        '<button type="button" class="mini-btn mini-fechar" aria-label="Fechar o vídeo">' +
+          '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg></button>';
+      document.body.appendChild(box);
+      document.body.classList.add('com-mini-video'); /* espaço no fim da página para o mini não tapar o rodapé */
+      var mini = box.querySelector('video');
+      if (mini) { mini.muted = true; var pr = mini.play(); if (pr && pr.catch) pr.catch(function () {}); }
+
+      box.querySelector('.mini-fechar').addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (mini) mini.pause();
+        box.remove();
+        document.body.classList.remove('com-mini-video');
+        try { sessionStorage.setItem(chave, '1'); } catch (er) { /* ignora */ }
+      });
+      box.addEventListener('click', abrir);
+
+      /* Esconde enquanto o teclado estiver aberto num campo de formulário */
+      document.addEventListener('focusin', function (e) {
+        if (e.target.matches && e.target.matches('input, textarea, select')) box.classList.add('mini-oculto');
+      });
+      document.addEventListener('focusout', function () { box.classList.remove('mini-oculto'); });
+
+      function abrir() {
+        var dlg = document.createElement('dialog');
+        dlg.className = 'modal-video';
+        dlg.setAttribute('aria-label', 'Vídeo do imóvel');
+        dlg.innerHTML = '<button type="button" class="modal-fechar" aria-label="Fechar o vídeo">' +
+          '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6.4 5 12 10.6 17.6 5 19 6.4 13.4 12 19 17.6 17.6 19 12 13.4 6.4 19 5 17.6 10.6 12 5 6.4z"/></svg></button>' +
+          '<video controls playsinline preload="auto"' + (v.poster ? ' poster="' + esc(v.poster) + '"' : '') +
+          ' width="' + (v.largura || 720) + '" height="' + (v.altura || 1280) + '"><source src="' + esc(v.arquivo) + '" type="video/mp4"></video>';
+        document.body.appendChild(dlg);
+        if (mini) mini.pause();
+        var grande = dlg.querySelector('video');
+        function fechar() { grande.pause(); dlg.close(); }
+        dlg.querySelector('.modal-fechar').addEventListener('click', fechar);
+        dlg.addEventListener('click', function (e) { if (e.target === dlg) fechar(); });
+        dlg.addEventListener('close', function () {
+          dlg.remove();
+          if (mini && document.body.contains(box)) { var p2 = mini.play(); if (p2 && p2.catch) p2.catch(function () {}); }
+          box.querySelector('.mini-expandir').focus();
+        });
+        dlg.showModal();
+        var p3 = grande.play(); if (p3 && p3.catch) p3.catch(function () {});
+      }
+    }
+    if (document.readyState === 'complete') iniciar(); else window.addEventListener('load', iniciar);
   }
 
   function renderDetalhe(im) {

@@ -24,7 +24,9 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 | Capa | `img/imoveis/<id>/poster.jpg` (primeiro quadro bonito do vídeo) |
 | Metadados | tirar sempre (vídeo de celular guarda a localização): `ffmpeg -i entrada.mp4 -map_metadata -1 -c copy -movflags +faststart video.mp4` |
 
-O player não toca sozinho e só baixa o vídeo quando a pessoa aperta o play.
+| Mini-player | `img/imoveis/<id>/video-mini.mp4`: 360×640, 15 a 20 s dos melhores trechos (sem abertura nem cartão final), sem áudio, até ~3 MB. Ex.: `ffmpeg -i video.mp4 -filter_complex "[0:v]trim=1.5:11.5,setpts=PTS-STARTPTS[a];[0:v]trim=16:24,setpts=PTS-STARTPTS[b];[a][b]concat=n=2:v=1,scale=360:640[v]" -map "[v]" -an -c:v libx264 -crf 27 -movflags +faststart -map_metadata -1 video-mini.mp4` |
+
+Com `mini`, a página do imóvel mostra um mini-player no canto inferior esquerdo, sem som e em loop, que abre o vídeo completo ao ser tocado. Ele pode ser fechado no X e não roda sozinho para quem pede menos movimento ou economia de dados. A seção "Vídeo do imóvel" abaixo da galeria não toca sozinha e só baixa o vídeo quando a pessoa aperta o play.
 
 ## 2. Dados (copie o bloco `_modelo` para dentro da lista `imoveis`)
 
@@ -45,7 +47,7 @@ O player não toca sozinho e só baixa o vídeo quando a pessoa aperta o play.
 | `caracteristicas` | lista curta de pontos fortes | sim |
 | `imagens` | lista com `src` (caminho da foto) e `alt` (descrição da foto para quem não enxerga) | sim |
 | `planta` | `src` e `alt` da planta | não |
-| `video` | vídeo próprio do imóvel: `{ "arquivo": "img/imoveis/<id>/video.mp4", "poster": "img/imoveis/<id>/poster.jpg", "largura": 720, "altura": 1280 }` (largura e altura do vídeo, para o player não pular de tamanho). Aparece abaixo da galeria, com o título "Vídeo do imóvel", e o card ganha o selo "▶ Vídeo" | não |
+| `video` | vídeo próprio do imóvel: `{ "arquivo": "img/imoveis/<id>/video.mp4", "poster": "img/imoveis/<id>/poster.jpg", "mini": "img/imoveis/<id>/video-mini.mp4", "largura": 720, "altura": 1280 }` (largura e altura do vídeo, para o player não pular de tamanho). Aparece abaixo da galeria, com o título "Vídeo do imóvel", e o card ganha o selo "▶ Vídeo" | não |
 | `youtube` | link de vídeo no YouTube (`https://youtu.be/...`). Mostra só a capa; o player do YouTube carrega quando a pessoa clica | não |
 | `inteira` (dentro de `imagens`) | versão 4:5 da foto, para a galeria mostrar o imóvel sem corte (ex.: fachadas) | não |
 

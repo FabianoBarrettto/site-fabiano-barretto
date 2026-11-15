@@ -117,7 +117,7 @@
       "areaM2": 31,
       "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, opção com sacada e banheiro com box instalado. Empreendimento com ótima localização, próximo ao Atacadão, ponto de ônibus e academias.",
       "caracteristicas": ["Com ou sem sacada", "Box no banheiro", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "video": { "arquivo": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video.mp4", "poster": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/poster.jpg", "largura": 720, "altura": 1280 },
+      "video": { "arquivo": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video.mp4", "poster": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/poster.jpg", "mini": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video-mini.mp4", "largura": 720, "altura": 1280 },
       "imagens": [
         { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Bela Vista, Alvorada" },
         { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp", "alt": "Sala com as portas do banheiro e do dormitório" },

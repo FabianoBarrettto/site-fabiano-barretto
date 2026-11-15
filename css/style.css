@@ -375,3 +375,20 @@ details p{color:var(--texto-suave)}
 .youtube-leve img{width:100%;height:auto;opacity:.9}
 .youtube-play{position:absolute;inset:0;margin:auto;width:68px;height:48px;border-radius:12px;background:#c4302b;color:#fff;font-size:1.4rem;display:flex;align-items:center;justify-content:center}
 .youtube-frame{display:block;width:100%;max-width:560px;aspect-ratio:16/9;border:0;margin-top:12px;border-radius:var(--raio)}
+/* Mini-player flutuante (canto inferior esquerdo; o WhatsApp fica à direita) */
+.mini-video{position:fixed;left:12px;bottom:16px;z-index:59;width:110px;height:196px;border-radius:16px;overflow:hidden;background:#0d1f33;box-shadow:0 6px 20px rgba(0,0,0,.28);cursor:pointer}
+.mini-video .mini-midia{display:block;width:100%;height:100%;object-fit:cover}
+.mini-play{position:absolute;inset:0;margin:auto;width:40px;height:40px;border-radius:999px;background:rgba(20,48,79,.85);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1rem}
+.mini-btn{position:absolute;top:6px;width:30px;height:30px;border:0;border-radius:999px;background:rgba(13,31,51,.72);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.mini-btn:focus-visible{outline:2px solid #fff;outline-offset:1px}
+.mini-expandir{left:6px}
+.mini-fechar{right:6px}
+.mini-oculto{display:none}
+@media (max-height:520px){.mini-video{display:none}}
+@media (min-width:900px){.mini-video{left:24px;bottom:24px;width:160px;height:284px;border-radius:18px}}
+.modal-video{padding:0;border:0;background:transparent;max-width:none;max-height:none;overflow:visible}
+.modal-video::backdrop{background:rgba(8,18,30,.82)}
+.modal-video video{display:block;width:min(94vw,calc(min(86vh,800px) * 9 / 16));height:auto;aspect-ratio:9/16;object-fit:contain;background:#000;border-radius:16px}
+.modal-fechar{position:absolute;top:10px;right:10px;width:44px;height:44px;border:0;border-radius:999px;background:#fff;color:var(--marinho);display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:1}
+.com-mini-video .site-footer{padding-bottom:228px}
+@media (min-width:900px){.com-mini-video .site-footer{padding-bottom:330px}}
