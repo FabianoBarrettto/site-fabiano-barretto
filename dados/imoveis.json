@@ -100,6 +100,33 @@
         { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/06.webp", "alt": "Dormitório com janela" },
         { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07-inteira.webp", "alt": "Banheiro" }
       ]
+    },
+    {
+      "id": "apartamento-1-dormitorio-bela-vista-lancamento",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Lançamento",
+      "titulo": "Apartamento de 1 dormitório",
+      "tipo": "Apartamento",
+      "bairro": "Bela Vista",
+      "cidade": "Alvorada",
+      "valorAPartir": "consulte",
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "A consultar",
+      "areaM2": 31,
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, opção com sacada e banheiro com box instalado. Empreendimento com ótima localização, próximo ao Atacadão, ponto de ônibus e academias.",
+      "caracteristicas": ["Com ou sem sacada", "Box no banheiro", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "video": { "arquivo": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video.mp4", "poster": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/poster.jpg", "largura": 720, "altura": 1280 },
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Bela Vista, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp", "alt": "Sala com as portas do banheiro e do dormitório" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/03.webp", "alt": "Sala com a porta de entrada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/04.webp", "alt": "Cozinha" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/05.webp", "alt": "Dormitório com piso laminado" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/06.webp", "alt": "Vista da janela do dormitório" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp", "alt": "Banheiro com box" }
+      ]
     }
   ]
 }

@@ -255,7 +255,7 @@
         '<p class="imovel-preco" style="margin:0">valor</p><p class="preco-grande">Consulte</p>') +
       '<ul class="ficha">' + fichas.map(function (f) { return '<li>' + esc(f[0]) + '<strong>' + esc(f[1]) + '</strong></li>'; }).join('') + '</ul>' +
       '<a class="btn btn-whatsapp btn-bloco" href="' + waLink(msg) + '" target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Quero este imóvel</a>' +
-      '<p class="aviso-pequeno" style="margin-top:14px">Valores a partir de, sujeitos a alteração e à aprovação de crédito.' +
+      '<p class="aviso-pequeno" style="margin-top:14px">' + (temPreco(im) ? 'Valores a partir de, sujeitos a alteração e à aprovação de crédito.' : 'Valor sob consulta. Condições sujeitas à aprovação de crédito.') +
       (categoria(im) === 'mcmv' ? ' Condições do Minha Casa Minha Vida conforme regras vigentes.' : '') + '</p>' +
       '<a class="btn btn-contorno btn-bloco" style="margin-top:6px" href="simulacao.html">Fazer simulação gratuita</a>' +
       '</div></aside></div>';
