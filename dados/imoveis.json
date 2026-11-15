@@ -41,12 +41,64 @@
       "caracteristicas": ["Até sem entrada*", "Piso laminado no dormitório", "Box no banheiro", "Em fase de finalização de obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
       "nota": "*Sujeito à análise de crédito.",
       "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
         { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp", "alt": "Sala com cozinha americana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Sala e cozinha com janela e piso cerâmico claro" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Banheiro com box de vidro instalado" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Sala integrada à cozinha, vista a partir da janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "alt": "Dormitório com piso laminado e janela com persiana" }
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Sala e cozinha, outro ângulo" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Cozinha com janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Dormitório com piso laminado e janela com persiana" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06-inteira.webp", "alt": "Banheiro com box de vidro instalado" }
+      ]
+    },
+    {
+      "id": "apartamento-1-dormitorio-jardim-algarve-pronto",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Pronto para morar",
+      "titulo": "Apartamento de 1 dormitório pronto para morar",
+      "tipo": "Apartamento",
+      "bairro": "Jardim Algarve",
+      "cidade": "Alvorada",
+      "valorAPartir": 160000,
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "Vaga rotativa",
+      "areaM2": "a partir de 28",
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Unidades com e sem pátio e vaga rotativa. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
+      "caracteristicas": ["Unidades com e sem pátio", "Pronto para morar", "Vaga rotativa", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório pronto para morar no Jardim Algarve, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/02.webp", "alt": "Sala" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/03.webp", "alt": "Sala e cozinha com porta de entrada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/04.webp", "alt": "Cozinha com janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/05.webp", "alt": "Dormitório com janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/06.webp", "alt": "Banheiro" }
+      ]
+    },
+    {
+      "id": "apartamento-1-dormitorio-jardim-algarve-em-obra",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Em obra",
+      "titulo": "Apartamento de 1 dormitório em obra",
+      "tipo": "Apartamento",
+      "bairro": "Jardim Algarve",
+      "cidade": "Alvorada",
+      "valorAPartir": 156500,
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "Sem vaga",
+      "areaM2": "a partir de 29,80",
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana com sacada e banheiro. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
+      "caracteristicas": ["Com sacada", "Até sem entrada*", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "nota": "*Sujeito à análise de crédito.",
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório em obra no Jardim Algarve, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/02.webp", "alt": "Sala com portas e sacada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/03.webp", "alt": "Cozinha americana com sacada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/04.webp", "alt": "Cozinha americana, outro ângulo" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/05.webp", "alt": "Sacada com vista do bairro" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/06.webp", "alt": "Dormitório com janela" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07-inteira.webp", "alt": "Banheiro" }
       ]
     }
   ]

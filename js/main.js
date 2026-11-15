@@ -207,7 +207,7 @@
     var html = '<p class="migalhas"><a href="index.html">Início</a> › <a href="imoveis.html">Imóveis</a> › ' + esc(im.titulo) + '</p>' +
       '<div class="imovel-detalhe"><div>' +
       '<div class="galeria"><div class="galeria-principal">' +
-      (imgs[0] ? '<img id="foto-principal" src="' + esc(imgs[0].src) + '" alt="' + esc(imgs[0].alt) + '" width="800" height="600">' : '') +
+      (imgs[0] ? '<img id="foto-principal" src="' + esc(imgs[0].inteira || imgs[0].src) + '" alt="' + esc(imgs[0].alt) + '" width="800" height="600">' : '') +
       (im.etiqueta ? '<span class="etiqueta' + (categoria(im) === 'medio-alto' ? ' etiqueta-alto' : '') + '">' + esc(im.etiqueta) + '</span>' : '') +
       '</div>';
     if (imgs.length > 1) {
@@ -241,7 +241,7 @@
     detalhe.querySelectorAll('.miniaturas button').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var g = imgs[Number(btn.getAttribute('data-n'))];
-        principal.src = g.src; principal.alt = g.alt;
+        principal.src = g.inteira || g.src; principal.alt = g.alt; /* na galeria, a foto inteira (sem corte) */
         detalhe.querySelectorAll('.miniaturas button').forEach(function (b) { b.removeAttribute('aria-current'); });
         btn.setAttribute('aria-current', 'true');
       });
