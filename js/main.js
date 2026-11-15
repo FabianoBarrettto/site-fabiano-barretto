@@ -13,6 +13,13 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
     });
   }
+  /* Imóvel com valor numérico? Sem número, o site mostra "Consulte" */
+  function temPreco(im) { return typeof im.valorAPartir === 'number' && im.valorAPartir > 0; }
+  /* Id do vídeo do YouTube a partir do link (youtu.be/ID, watch?v=ID, shorts/ID ou embed/ID) */
+  function idYoutube(url) {
+    var m = String(url || '').match(/(?:youtu\.be\/|[?&]v=|\/shorts\/|\/embed\/)([A-Za-z0-9_-]{11})/);
+    return m ? m[1] : '';
+  }
   function brl(n) {
     return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 });
   }
@@ -75,10 +82,12 @@
     if (im.areaM2) info.push(esc(im.areaM2) + ' m²');
     if (im.quartos) info.push(esc(im.quartos) + (im.quartos > 1 ? ' quartos' : ' quarto'));
     var alto = categoria(im) === 'medio-alto';
-    var preco = '<p class="imovel-preco">a partir de <strong>' + brl(im.valorAPartir) + '</strong></p>';
+    var preco = temPreco(im) ? '<p class="imovel-preco">a partir de <strong>' + brl(im.valorAPartir) + '</strong></p>' :
+      '<p class="imovel-preco">valor <strong>Consulte</strong></p>';
     return '<a class="imovel-card' + (alto ? ' card-alto' : '') + '" href="imovel.html?id=' + encodeURIComponent(im.id) + '">' +
       '<div class="imovel-foto"><img src="' + esc(img.src) + '" alt="' + esc(img.alt) + '" loading="lazy" width="800" height="600">' +
       (im.etiqueta ? '<span class="etiqueta' + (alto ? ' etiqueta-alto' : '') + '">' + esc(im.etiqueta) + '</span>' : '') +
+      (im.video || im.youtube ? '<span class="selo-video">▶ Vídeo</span>' : '') +
       '</div>' +
       '<div class="imovel-corpo">' +
       '<h3 class="imovel-titulo">' + esc(im.titulo) + '</h3>' +
@@ -141,7 +150,7 @@
       var c = fCategoria.value, t = fTipo.value, b = fBairro.value, v = Number(fValor.value) || 0, q = Number(fQuartos.value) || 0;
       var res = todos.filter(function (i) {
         return (!c || categoria(i) === c) && (!t || i.tipo === t) && (!b || i.bairro === b) &&
-          (!v || i.valorAPartir <= v) && (!q || i.quartos >= q);
+          (!v || (temPreco(i) && i.valorAPartir <= v)) && (!q || i.quartos >= q); /* valor "Consulte" só aparece em "Qualquer valor" */
       });
       contagem.textContent = res.length === 1 ? '1 imóvel encontrado' : res.length + ' imóveis encontrados';
       lista.innerHTML = res.length ? res.map(cardImovel).join('') : msgVazio(c, !!(t || b || v || q));
@@ -196,7 +205,7 @@
 
     document.title = im.titulo + ' em ' + im.bairro + ', Alvorada RS | Fabiano Barretto Imóveis';
     var md = document.querySelector('meta[name="description"]');
-    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', Alvorada RS, a partir de ' + brl(im.valorAPartir) + '. ' + NOME_CATEGORIA[categoria(im)] + ', sujeito à aprovação de crédito.');
+    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', Alvorada RS, ' + (temPreco(im) ? 'a partir de ' + brl(im.valorAPartir) : 'valor sob consulta') + '. ' + NOME_CATEGORIA[categoria(im)] + ', sujeito à aprovação de crédito.');
 
     var fichas = [];
     if (im.quartos) fichas.push(['Quartos', im.quartos]);
@@ -216,6 +225,20 @@
       }).join('') + '</div>';
     }
     html += '</div>';
+    if (im.video || im.youtube) {
+      html += '<section class="video-imovel" aria-labelledby="titulo-video"><h3 id="titulo-video">Vídeo do imóvel</h3>';
+      if (im.video && im.video.arquivo) {
+        html += '<video controls playsinline preload="none"' + (im.video.poster ? ' poster="' + esc(im.video.poster) + '"' : '') +
+          ' width="' + (im.video.largura || 720) + '" height="' + (im.video.altura || 1280) + '">' +
+          '<source src="' + esc(im.video.arquivo) + '" type="video/mp4">Seu navegador não reproduz vídeo. <a href="' + esc(im.video.arquivo) + '">Baixe o vídeo</a>.</video>';
+      }
+      var yt = idYoutube(im.youtube);
+      if (yt) {
+        html += '<button type="button" class="youtube-leve" data-yt="' + yt + '" aria-label="Assistir ao vídeo do imóvel no YouTube">' +
+          '<img src="https://i.ytimg.com/vi/' + yt + '/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="youtube-play" aria-hidden="true">▶</span></button>';
+      }
+      html += '</section>';
+    }
     html += '<h2>Sobre o imóvel</h2><p>' + esc(im.descricao) + '</p>';
     if (im.caracteristicas && im.caracteristicas.length) {
       html += '<h3>Características</h3><ul class="lista-check">' + im.caracteristicas.map(function (c) { return '<li>' + esc(c) + '</li>'; }).join('') + '</ul>';
@@ -228,7 +251,8 @@
       '<span class="eyebrow" style="margin:0">' + esc(NOME_CATEGORIA[categoria(im)]) + '</span>' +
       '<span class="imovel-bairro" style="display:block">' + esc(im.tipo) + ' · ' + esc(im.bairro) + ', ' + esc(im.cidade) + '</span>' +
       '<h1 style="font-size:1.6rem;margin:8px 0 14px">' + esc(im.titulo) + '</h1>' +
-      '<p class="imovel-preco" style="margin:0">a partir de</p><p class="preco-grande">' + brl(im.valorAPartir) + '</p>' +
+      (temPreco(im) ? '<p class="imovel-preco" style="margin:0">a partir de</p><p class="preco-grande">' + brl(im.valorAPartir) + '</p>' :
+        '<p class="imovel-preco" style="margin:0">valor</p><p class="preco-grande">Consulte</p>') +
       '<ul class="ficha">' + fichas.map(function (f) { return '<li>' + esc(f[0]) + '<strong>' + esc(f[1]) + '</strong></li>'; }).join('') + '</ul>' +
       '<a class="btn btn-whatsapp btn-bloco" href="' + waLink(msg) + '" target="_blank" rel="noopener"><img src="img/whatsapp.svg" alt="" width="22" height="22">Quero este imóvel</a>' +
       '<p class="aviso-pequeno" style="margin-top:14px">Valores a partir de, sujeitos a alteração e à aprovação de crédito.' +
@@ -236,6 +260,16 @@
       '<a class="btn btn-contorno btn-bloco" style="margin-top:6px" href="simulacao.html">Fazer simulação gratuita</a>' +
       '</div></aside></div>';
     detalhe.innerHTML = html;
+
+    detalhe.querySelectorAll('.youtube-leve').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = 'https://www.youtube-nocookie.com/embed/' + b.getAttribute('data-yt') + '?autoplay=1&rel=0';
+        f.title = 'Vídeo do imóvel'; f.allow = 'autoplay; encrypted-media; picture-in-picture'; f.allowFullscreen = true;
+        f.className = 'youtube-frame';
+        b.replaceWith(f);
+      });
+    });
 
     var principal = document.getElementById('foto-principal');
     detalhe.querySelectorAll('.miniaturas button').forEach(function (btn) {

@@ -15,6 +15,17 @@ Todos os imóveis ficam em **`dados/imoveis.json`**. Não é preciso mexer no HT
 
 Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa ou do Governo nem dados de clientes. O repositório é público.
 
+## 1b. Vídeo
+
+| Item | Padrão |
+|---|---|
+| Arquivo | `img/imoveis/<id>/video.mp4` (H.264 + AAC, vem tratado pelo Designer) |
+| Formato | vertical (9:16), até ~1 minuto, de preferência até 10 MB |
+| Capa | `img/imoveis/<id>/poster.jpg` (primeiro quadro bonito do vídeo) |
+| Metadados | tirar sempre (vídeo de celular guarda a localização): `ffmpeg -i entrada.mp4 -map_metadata -1 -c copy -movflags +faststart video.mp4` |
+
+O player não toca sozinho e só baixa o vídeo quando a pessoa aperta o play.
+
 ## 2. Dados (copie o bloco `_modelo` para dentro da lista `imoveis`)
 
 | Campo | O que colocar | Obrigatório |
@@ -26,7 +37,7 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 | `titulo` | ex.: "Casa de 2 quartos com pátio" | sim |
 | `tipo` | Casa, Apartamento ou Sobrado | sim |
 | `bairro` / `cidade` | bairro e cidade (o filtro de bairro usa esse nome, então escreva sempre igual) | sim |
-| `valorAPartir` | número em reais, sem pontos (ex.: `195000`) | sim |
+| `valorAPartir` | número em reais, sem pontos (ex.: `195000`). Sem valor definido, escreva `"consulte"`: o site mostra "Consulte" no card e na página, e o imóvel só aparece na busca com "Qualquer valor" | sim |
 | `quartos`, `banheiros`, `vagas` | números. `vagas` também aceita texto, ex.: `"Vaga rotativa"` (aparece como "Garagem") | sim |
 | `areaM2` | área privativa em m²: número (`48`) ou faixa em texto (`"28 a 32"`) | sim |
 | `nota` | observação em letra pequena abaixo das características, ex.: `"*Sujeito à análise de crédito."` | não |
@@ -34,6 +45,9 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 | `caracteristicas` | lista curta de pontos fortes | sim |
 | `imagens` | lista com `src` (caminho da foto) e `alt` (descrição da foto para quem não enxerga) | sim |
 | `planta` | `src` e `alt` da planta | não |
+| `video` | vídeo próprio do imóvel: `{ "arquivo": "img/imoveis/<id>/video.mp4", "poster": "img/imoveis/<id>/poster.jpg", "largura": 720, "altura": 1280 }` (largura e altura do vídeo, para o player não pular de tamanho). Aparece abaixo da galeria, com o título "Vídeo do imóvel", e o card ganha o selo "▶ Vídeo" | não |
+| `youtube` | link de vídeo no YouTube (`https://youtu.be/...`). Mostra só a capa; o player do YouTube carrega quando a pessoa clica | não |
+| `inteira` (dentro de `imagens`) | versão 4:5 da foto, para a galeria mostrar o imóvel sem corte (ex.: fachadas) | não |
 
 Valores são sempre "a partir de" e o site já mostra "sujeito à aprovação de crédito". Não escreva subsídio, juros nem promessas de aprovação na descrição.
 
