@@ -127,6 +127,85 @@
         { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/06.webp", "alt": "Vista da janela do dormitório" },
         { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp", "alt": "Banheiro com box" }
       ]
+    },
+    {
+      "id": "apartamento-1-dormitorio-bela-vista-pronto",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Últimas unidades",
+      "titulo": "Apartamento de 1 dormitório pronto para morar",
+      "tipo": "Apartamento",
+      "bairro": "Bela Vista",
+      "cidade": "Alvorada",
+      "valorAPartir": 170000,
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "Sem vaga",
+      "areaM2": "a partir de 28",
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
+      "caracteristicas": ["Próximo ao Atacadão", "Pronto para morar", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório pronto no Bela Vista, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/02.webp", "alt": "Sala e cozinha americana" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/03.webp", "alt": "Cozinha" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/04.webp", "alt": "Dormitório" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/05.webp", "alt": "Dormitório, outro ângulo" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/06.webp", "alt": "Banheiro" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/07.webp", "alt": "Corredor do prédio" }
+      ]
+    },
+    {
+      "id": "apartamento-2-dormitorios-bela-vista-pronto",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Últimas unidades",
+      "titulo": "Apartamento de 2 dormitórios pronto para morar",
+      "tipo": "Apartamento",
+      "bairro": "Bela Vista",
+      "cidade": "Alvorada",
+      "valorAPartir": 210000,
+      "quartos": 2,
+      "banheiros": 1,
+      "vagas": "Sem vaga",
+      "areaM2": "a partir de 40",
+      "descricao": "Apartamento de 2 dormitórios com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
+      "caracteristicas": ["Próximo ao Atacadão", "Pronto para morar", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "imagens": [
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 2 dormitórios pronto no Bela Vista, Alvorada" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/02.webp", "alt": "Sala" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/03.webp", "alt": "Sala, lado da entrada" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/04.webp", "alt": "Sala e cozinha americana" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/05.webp", "alt": "Cozinha" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/06.webp", "alt": "Dormitório 1" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/07.webp", "alt": "Dormitório 2" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/08.webp", "alt": "Dormitório, lado da porta" },
+        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/09.webp", "alt": "Banheiro" }
+      ]
+    },
+    {
+      "id": "apartamento-1-dormitorio-jardim-algarve-lancamento",
+      "categoria": "mcmv",
+      "destaque": true,
+      "etiqueta": "Lançamento",
+      "titulo": "Apartamento de 1 dormitório em lançamento",
+      "tipo": "Apartamento",
+      "bairro": "Jardim Algarve",
+      "cidade": "Alvorada",
+      "valorAPartir": "consulte",
+      "quartos": 1,
+      "banheiros": 1,
+      "vagas": "Vaga rotativa",
+      "areaM2": "a partir de 28",
+      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Avenida Zero Hora, próximo ao mercado Jumbo, ponto de ônibus e academia.",
+      "caracteristicas": ["Próximo ao Jumbo", "Fácil acesso à Av. Zero Hora", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
+      "imagens": [
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório em lançamento no Jardim Algarve, Alvorada" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/02.webp", "alt": "Sala e cozinha americana" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/03.webp", "alt": "Sala e cozinha, outro ângulo" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/04.webp", "alt": "Dormitório" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/05.webp", "alt": "Dormitório, outro ângulo" },
+        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06-inteira.webp", "alt": "Banheiro" }
+      ]
     }
   ]
 }
