@@ -97,17 +97,20 @@
   }
 
   /* Destaques na página inicial: uma faixa por categoria */
+  /* Faixa da página inicial: imóveis da categoria, dos mais novos (fim do cadastro) para os mais antigos.
+     max = 0 mostra todos. */
   function faixaDestaques(el, cat, max) {
     if (!el) return;
     carregarImoveis().then(function (lista) {
-      var sel = lista.filter(function (i) { return i.destaque && categoria(i) === cat; }).slice(0, max);
+      var sel = lista.filter(function (i) { return i.destaque !== false && categoria(i) === cat; }).reverse();
+      if (max) sel = sel.slice(0, max);
       if (!sel.length && cat === 'medio-alto') { el.hidden = true; return; } /* o bloco fica só com o texto e o botão de atendimento */
       el.innerHTML = sel.length ? sel.map(cardImovel).join('') : msgVazio(cat);
       var deslize = el.parentNode.querySelector('.deslize');
       if (deslize && sel.length < 2) deslize.hidden = true; /* não há o que deslizar */
     }).catch(function () { el.innerHTML = msgErro(); });
   }
-  faixaDestaques(document.getElementById('destaques'), 'mcmv', 4);
+  faixaDestaques(document.getElementById('destaques'), 'mcmv', 0); /* todos os MCMV (escolha do usuário em 2026-11-16) */
   faixaDestaques(document.getElementById('destaques-alto'), 'medio-alto', 3);
 
   /* Busca da página inicial: preenche os bairros a partir do cadastro */

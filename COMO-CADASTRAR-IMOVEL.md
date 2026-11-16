@@ -34,7 +34,7 @@ Não use fotos com pessoas, placas de outras imobiliárias, logotipos da Caixa o
 |---|---|---|
 | `id` | identificador sem espaços nem acentos, usado no endereço (`imovel.html?id=...`) e no nome da pasta de fotos | sim |
 | `categoria` | `mcmv` (Minha Casa Minha Vida) ou `medio-alto` (médio e alto padrão). Define em qual faixa da página inicial e em qual filtro o imóvel aparece | sim |
-| `destaque` | `true` para aparecer na página inicial (até 4 do MCMV e 3 de médio e alto padrão) | sim |
+| `destaque` | `true` para aparecer na página inicial. A faixa do MCMV mostra todos, dos mais novos (últimos do cadastro) para os mais antigos; a de médio e alto padrão mostra até 3. Use `false` para tirar um imóvel da página inicial sem apagá-lo | sim |
 | `etiqueta` | texto curto que aparece no canto da foto, ex.: "Aceita FGTS", "Pronto para morar", "Na planta", "Condomínio fechado" | não |
 | `titulo` | ex.: "Casa de 2 quartos com pátio" | sim |
 | `tipo` | Casa, Apartamento ou Sobrado | sim |
