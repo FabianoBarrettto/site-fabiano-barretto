@@ -274,9 +274,9 @@
     var imgs = im.imagens || [];
     var msg = 'Olá, Fabiano! Tenho interesse no imóvel "' + im.titulo + '" (' + im.bairro + ', ' + im.cidade + ') que vi no seu site. Ref.: ' + im.id + '. Pode me passar mais informações?';
 
-    document.title = im.titulo + ' em ' + im.bairro + ', Alvorada RS | Fabiano Barretto Imóveis';
+    document.title = im.titulo + ' em ' + im.bairro + ', ' + im.cidade + ' RS | Fabiano Barretto Imóveis';
     var md = document.querySelector('meta[name="description"]');
-    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', Alvorada RS, ' + (temPreco(im) ? 'a partir de ' + brl(im.valorAPartir) : 'valor sob consulta') + '. ' + NOME_CATEGORIA[categoria(im)] + ', sujeito à aprovação de crédito.');
+    if (md) md.setAttribute('content', im.titulo + ' em ' + im.bairro + ', ' + im.cidade + ' RS, ' + (temPreco(im) ? 'a partir de ' + brl(im.valorAPartir) : 'valor sob consulta') + '. ' + NOME_CATEGORIA[categoria(im)] + ', sujeito à aprovação de crédito.');
 
     var fichas = [];
     if (im.quartos) fichas.push(['Quartos', im.quartos]);

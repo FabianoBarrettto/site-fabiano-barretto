@@ -1,211 +1,505 @@
 {
-  "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis' e troque os dados. 'categoria' é 'mcmv' (Minha Casa Minha Vida) ou 'medio-alto' (médio e alto padrão). O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
-  "_modelo": {
-    "id": "casa-2-quartos-umbu-01",
-    "categoria": "mcmv",
-    "destaque": false,
-    "etiqueta": "Aceita FGTS",
-    "titulo": "Casa de 2 quartos com pátio",
-    "tipo": "Casa",
-    "bairro": "Nome do bairro",
-    "cidade": "Alvorada",
-    "valorAPartir": 0,
-    "quartos": 2,
-    "banheiros": 1,
-    "vagas": 1,
-    "areaM2": 0,
-    "descricao": "Texto curto e claro sobre o imóvel (2 a 4 frases).",
-    "caracteristicas": ["Item 1", "Item 2", "Item 3"],
-    "imagens": [
-      { "src": "img/imoveis/casa-2-quartos-umbu-01/01.webp", "alt": "Fachada da casa de 2 quartos no bairro X" },
-      { "src": "img/imoveis/casa-2-quartos-umbu-01/02.webp", "alt": "Sala integrada com a cozinha" }
-    ],
-    "planta": { "src": "img/imoveis/casa-2-quartos-umbu-01/planta.webp", "alt": "Planta baixa da casa de 2 quartos" }
-  },
-  "imoveis": [
+ "_leia-me": "Cadastro de imóveis do site. Passo a passo completo em COMO-CADASTRAR-IMOVEL.md. Para adicionar um imóvel: copie o bloco '_modelo' abaixo para dentro da lista 'imoveis' e troque os dados. 'categoria' é 'mcmv' (Minha Casa Minha Vida) ou 'medio-alto' (médio e alto padrão). O site só lê a lista 'imoveis'; '_leia-me' e '_modelo' são ignorados.",
+ "_modelo": {
+  "id": "casa-2-quartos-umbu-01",
+  "categoria": "mcmv",
+  "destaque": false,
+  "etiqueta": "Aceita FGTS",
+  "titulo": "Casa de 2 quartos com pátio",
+  "tipo": "Casa",
+  "bairro": "Nome do bairro",
+  "cidade": "Alvorada",
+  "valorAPartir": 0,
+  "quartos": 2,
+  "banheiros": 1,
+  "vagas": 1,
+  "areaM2": 0,
+  "descricao": "Texto curto e claro sobre o imóvel (2 a 4 frases).",
+  "caracteristicas": [
+   "Item 1",
+   "Item 2",
+   "Item 3"
+  ],
+  "imagens": [
+   {
+    "src": "img/imoveis/casa-2-quartos-umbu-01/01.webp",
+    "alt": "Fachada da casa de 2 quartos no bairro X"
+   },
+   {
+    "src": "img/imoveis/casa-2-quartos-umbu-01/02.webp",
+    "alt": "Sala integrada com a cozinha"
+   }
+  ],
+  "planta": {
+   "src": "img/imoveis/casa-2-quartos-umbu-01/planta.webp",
+   "alt": "Planta baixa da casa de 2 quartos"
+  }
+ },
+ "imoveis": [
+  {
+   "id": "apartamento-1-dormitorio-jardim-aparecida-01",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Últimas unidades",
+   "titulo": "Apartamento de 1 dormitório",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Aparecida",
+   "cidade": "Alvorada",
+   "valorAPartir": 155000,
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "Vaga rotativa",
+   "areaM2": "28 a 32",
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro com box instalado e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Estrada Frederico Dihl, próximo a mercado, ponto de ônibus e academia.",
+   "caracteristicas": [
+    "Até sem entrada*",
+    "Piso laminado no dormitório",
+    "Box no banheiro",
+    "Em fase de finalização de obra",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "nota": "*Sujeito à análise de crédito.",
+   "imagens": [
     {
-      "id": "apartamento-1-dormitorio-jardim-aparecida-01",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Últimas unidades",
-      "titulo": "Apartamento de 1 dormitório",
-      "tipo": "Apartamento",
-      "bairro": "Jardim Aparecida",
-      "cidade": "Alvorada",
-      "valorAPartir": 155000,
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "Vaga rotativa",
-      "areaM2": "28 a 32",
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro com box instalado e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Estrada Frederico Dihl, próximo a mercado, ponto de ônibus e academia.",
-      "caracteristicas": ["Até sem entrada*", "Piso laminado no dormitório", "Box no banheiro", "Em fase de finalização de obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "nota": "*Sujeito à análise de crédito.",
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Aparecida, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp", "alt": "Sala com cozinha americana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp", "alt": "Sala e cozinha, outro ângulo" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp", "alt": "Cozinha com janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp", "alt": "Dormitório com piso laminado e janela com persiana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06-inteira.webp", "alt": "Banheiro com box de vidro instalado" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/01-inteira.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Aparecida, Alvorada"
     },
     {
-      "id": "apartamento-1-dormitorio-jardim-algarve-pronto",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Pronto para morar",
-      "titulo": "Apartamento de 1 dormitório pronto para morar",
-      "tipo": "Apartamento",
-      "bairro": "Jardim Algarve",
-      "cidade": "Alvorada",
-      "valorAPartir": 160000,
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "Vaga rotativa",
-      "areaM2": "a partir de 28",
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Unidades com e sem pátio e vaga rotativa. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
-      "caracteristicas": ["Unidades com e sem pátio", "Pronto para morar", "Vaga rotativa", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório pronto para morar no Jardim Algarve, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/02.webp", "alt": "Sala" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/03.webp", "alt": "Sala e cozinha com porta de entrada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/04.webp", "alt": "Cozinha com janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/05.webp", "alt": "Dormitório com janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/06.webp", "alt": "Banheiro" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/02.webp",
+     "alt": "Sala com cozinha americana"
     },
     {
-      "id": "apartamento-1-dormitorio-jardim-algarve-em-obra",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Em obra",
-      "titulo": "Apartamento de 1 dormitório em obra",
-      "tipo": "Apartamento",
-      "bairro": "Jardim Algarve",
-      "cidade": "Alvorada",
-      "valorAPartir": 156500,
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "Sem vaga",
-      "areaM2": "a partir de 29,80",
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana com sacada e banheiro. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
-      "caracteristicas": ["Com sacada", "Até sem entrada*", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "nota": "*Sujeito à análise de crédito.",
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório em obra no Jardim Algarve, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/02.webp", "alt": "Sala com portas e sacada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/03.webp", "alt": "Cozinha americana com sacada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/04.webp", "alt": "Cozinha americana, outro ângulo" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/05.webp", "alt": "Sacada com vista do bairro" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/06.webp", "alt": "Dormitório com janela" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07-inteira.webp", "alt": "Banheiro" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/03.webp",
+     "alt": "Sala e cozinha, outro ângulo"
     },
     {
-      "id": "apartamento-1-dormitorio-bela-vista-lancamento",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Lançamento",
-      "titulo": "Apartamento de 1 dormitório",
-      "tipo": "Apartamento",
-      "bairro": "Bela Vista",
-      "cidade": "Alvorada",
-      "valorAPartir": "consulte",
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "A consultar",
-      "areaM2": 31,
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, opção com sacada e banheiro com box instalado. Empreendimento com ótima localização, próximo ao Atacadão, ponto de ônibus e academias.",
-      "caracteristicas": ["Com ou sem sacada", "Box no banheiro", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "video": { "arquivo": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video.mp4", "poster": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/poster.jpg", "mini": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video-mini.mp4", "largura": 720, "altura": 1280 },
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório no Bela Vista, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp", "alt": "Sala com as portas do banheiro e do dormitório" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/03.webp", "alt": "Sala com a porta de entrada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/04.webp", "alt": "Cozinha" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/05.webp", "alt": "Dormitório com piso laminado" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/06.webp", "alt": "Vista da janela do dormitório" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp", "alt": "Banheiro com box" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/04.webp",
+     "alt": "Cozinha com janela"
     },
     {
-      "id": "apartamento-1-dormitorio-bela-vista-pronto",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Últimas unidades",
-      "titulo": "Apartamento de 1 dormitório pronto para morar",
-      "tipo": "Apartamento",
-      "bairro": "Bela Vista",
-      "cidade": "Alvorada",
-      "valorAPartir": 170000,
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "Sem vaga",
-      "areaM2": "a partir de 28",
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
-      "caracteristicas": ["Próximo ao Atacadão", "Pronto para morar", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório pronto no Bela Vista, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/02.webp", "alt": "Sala e cozinha americana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/03.webp", "alt": "Cozinha" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/04.webp", "alt": "Dormitório" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/05.webp", "alt": "Dormitório, outro ângulo" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/06.webp", "alt": "Banheiro" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/07.webp", "alt": "Corredor do prédio" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/05.webp",
+     "alt": "Dormitório com piso laminado e janela com persiana"
     },
     {
-      "id": "apartamento-2-dormitorios-bela-vista-pronto",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Últimas unidades",
-      "titulo": "Apartamento de 2 dormitórios pronto para morar",
-      "tipo": "Apartamento",
-      "bairro": "Bela Vista",
-      "cidade": "Alvorada",
-      "valorAPartir": 210000,
-      "quartos": 2,
-      "banheiros": 1,
-      "vagas": "Sem vaga",
-      "areaM2": "a partir de 40",
-      "descricao": "Apartamento de 2 dormitórios com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
-      "caracteristicas": ["Próximo ao Atacadão", "Pronto para morar", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "imagens": [
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/01.webp", "alt": "Fachada do prédio do apartamento de 2 dormitórios pronto no Bela Vista, Alvorada" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/02.webp", "alt": "Sala" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/03.webp", "alt": "Sala, lado da entrada" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/04.webp", "alt": "Sala e cozinha americana" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/05.webp", "alt": "Cozinha" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/06.webp", "alt": "Dormitório 1" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/07.webp", "alt": "Dormitório 2" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/08.webp", "alt": "Dormitório, lado da porta" },
-        { "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/09.webp", "alt": "Banheiro" }
-      ]
-    },
-    {
-      "id": "apartamento-1-dormitorio-jardim-algarve-lancamento",
-      "categoria": "mcmv",
-      "destaque": true,
-      "etiqueta": "Lançamento",
-      "titulo": "Apartamento de 1 dormitório em lançamento",
-      "tipo": "Apartamento",
-      "bairro": "Jardim Algarve",
-      "cidade": "Alvorada",
-      "valorAPartir": "consulte",
-      "quartos": 1,
-      "banheiros": 1,
-      "vagas": "Vaga rotativa",
-      "areaM2": "a partir de 28",
-      "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Avenida Zero Hora, próximo ao mercado Jumbo, ponto de ônibus e academia.",
-      "caracteristicas": ["Próximo ao Jumbo", "Fácil acesso à Av. Zero Hora", "Em obra", "Aceita FGTS e subsídio do Minha Casa Minha Vida"],
-      "imagens": [
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01-inteira.webp", "alt": "Fachada do prédio do apartamento de 1 dormitório em lançamento no Jardim Algarve, Alvorada" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/02.webp", "alt": "Sala e cozinha americana" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/03.webp", "alt": "Sala e cozinha, outro ângulo" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/04.webp", "alt": "Dormitório" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/05.webp", "alt": "Dormitório, outro ângulo" },
-        { "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06.webp", "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06-inteira.webp", "alt": "Banheiro" }
-      ]
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-aparecida-01/06-inteira.webp",
+     "alt": "Banheiro com box de vidro instalado"
     }
-  ]
+   ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-jardim-algarve-pronto",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Pronto para morar",
+   "titulo": "Apartamento de 1 dormitório pronto para morar",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Algarve",
+   "cidade": "Alvorada",
+   "valorAPartir": 160000,
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "Vaga rotativa",
+   "areaM2": "a partir de 28",
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Unidades com e sem pátio e vaga rotativa. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
+   "caracteristicas": [
+    "Unidades com e sem pátio",
+    "Pronto para morar",
+    "Vaga rotativa",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/01.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório pronto para morar no Jardim Algarve, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/02.webp",
+     "alt": "Sala"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/03.webp",
+     "alt": "Sala e cozinha com porta de entrada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/04.webp",
+     "alt": "Cozinha com janela"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/05.webp",
+     "alt": "Dormitório com janela"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto/06.webp",
+     "alt": "Banheiro"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-jardim-algarve-em-obra",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Em obra",
+   "titulo": "Apartamento de 1 dormitório em obra",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Algarve",
+   "cidade": "Alvorada",
+   "valorAPartir": 156500,
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "Sem vaga",
+   "areaM2": "a partir de 29,80",
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana com sacada e banheiro. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo a mercados, ponto de ônibus e posto de gasolina.",
+   "caracteristicas": [
+    "Com sacada",
+    "Até sem entrada*",
+    "Em obra",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "nota": "*Sujeito à análise de crédito.",
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/01-inteira.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório em obra no Jardim Algarve, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/02.webp",
+     "alt": "Sala com portas e sacada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/03.webp",
+     "alt": "Cozinha americana com sacada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/04.webp",
+     "alt": "Cozinha americana, outro ângulo"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/05.webp",
+     "alt": "Sacada com vista do bairro"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/06.webp",
+     "alt": "Dormitório com janela"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-em-obra/07-inteira.webp",
+     "alt": "Banheiro"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-bela-vista-lancamento",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Lançamento",
+   "titulo": "Apartamento de 1 dormitório",
+   "tipo": "Apartamento",
+   "bairro": "Bela Vista",
+   "cidade": "Alvorada",
+   "valorAPartir": "consulte",
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "A consultar",
+   "areaM2": 31,
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, opção com sacada e banheiro com box instalado. Empreendimento com ótima localização, próximo ao Atacadão, ponto de ônibus e academias.",
+   "caracteristicas": [
+    "Com ou sem sacada",
+    "Box no banheiro",
+    "Em obra",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "video": {
+    "arquivo": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video.mp4",
+    "poster": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/poster.jpg",
+    "mini": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/video-mini.mp4",
+    "largura": 720,
+    "altura": 1280
+   },
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/01.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório no Bela Vista, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp",
+     "alt": "Sala com as portas do banheiro e do dormitório"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/03.webp",
+     "alt": "Sala com a porta de entrada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/04.webp",
+     "alt": "Cozinha"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/05.webp",
+     "alt": "Dormitório com piso laminado"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/06.webp",
+     "alt": "Vista da janela do dormitório"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp",
+     "alt": "Banheiro com box"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-bela-vista-pronto",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Últimas unidades",
+   "titulo": "Apartamento de 1 dormitório pronto para morar",
+   "tipo": "Apartamento",
+   "bairro": "Bela Vista",
+   "cidade": "Alvorada",
+   "valorAPartir": 170000,
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "Sem vaga",
+   "areaM2": "a partir de 28",
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
+   "caracteristicas": [
+    "Próximo ao Atacadão",
+    "Pronto para morar",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/01.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório pronto no Bela Vista, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/02.webp",
+     "alt": "Sala e cozinha americana"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/03.webp",
+     "alt": "Cozinha"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/04.webp",
+     "alt": "Dormitório"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/05.webp",
+     "alt": "Dormitório, outro ângulo"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/06.webp",
+     "alt": "Banheiro"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-pronto/07.webp",
+     "alt": "Corredor do prédio"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-2-dormitorios-bela-vista-pronto",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Últimas unidades",
+   "titulo": "Apartamento de 2 dormitórios pronto para morar",
+   "tipo": "Apartamento",
+   "bairro": "Bela Vista",
+   "cidade": "Alvorada",
+   "valorAPartir": 210000,
+   "quartos": 2,
+   "banheiros": 1,
+   "vagas": "Sem vaga",
+   "areaM2": "a partir de 40",
+   "descricao": "Apartamento de 2 dormitórios com sala e cozinha americana e banheiro. Empreendimento com ótima localização, perto da entrada de Alvorada, de mercados, ponto de ônibus e academia.",
+   "caracteristicas": [
+    "Próximo ao Atacadão",
+    "Pronto para morar",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/01.webp",
+     "alt": "Fachada do prédio do apartamento de 2 dormitórios pronto no Bela Vista, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/02.webp",
+     "alt": "Sala"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/03.webp",
+     "alt": "Sala, lado da entrada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/04.webp",
+     "alt": "Sala e cozinha americana"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/05.webp",
+     "alt": "Cozinha"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/06.webp",
+     "alt": "Dormitório 1"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/07.webp",
+     "alt": "Dormitório 2"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/08.webp",
+     "alt": "Dormitório, lado da porta"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-bela-vista-pronto/09.webp",
+     "alt": "Banheiro"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-jardim-algarve-lancamento",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Lançamento",
+   "titulo": "Apartamento de 1 dormitório em lançamento",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Algarve",
+   "cidade": "Alvorada",
+   "valorAPartir": "consulte",
+   "quartos": 1,
+   "banheiros": 1,
+   "vagas": "Vaga rotativa",
+   "areaM2": "a partir de 28",
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana, banheiro e vagas rotativas. Empreendimento com ótima localização e fácil acesso à Avenida Zero Hora, próximo ao mercado Jumbo, ponto de ônibus e academia.",
+   "caracteristicas": [
+    "Próximo ao Jumbo",
+    "Fácil acesso à Av. Zero Hora",
+    "Em obra",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/01-inteira.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório em lançamento no Jardim Algarve, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/02.webp",
+     "alt": "Sala e cozinha americana"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/03.webp",
+     "alt": "Sala e cozinha, outro ângulo"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/04.webp",
+     "alt": "Dormitório"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/05.webp",
+     "alt": "Dormitório, outro ângulo"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-lancamento/06-inteira.webp",
+     "alt": "Banheiro"
+    }
+   ]
+  },
+  {
+   "id": "apartamento-2-dormitorios-jardim-algarve-lancamento",
+   "categoria": "mcmv",
+   "destaque": true,
+   "etiqueta": "Lançamento",
+   "titulo": "Apartamento de 2 dormitórios pronto para morar",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Algarve",
+   "cidade": "Alvorada",
+   "valorAPartir": 194000,
+   "quartos": 2,
+   "banheiros": 1,
+   "vagas": "Vagas rotativas",
+   "areaM2": "a partir de 40",
+   "descricao": "Apartamento de 2 dormitórios (sendo um com sacada), sala e cozinha americana, banheiro com box e vagas rotativas. Empreendimento com ótima localização, próximo ao mercado Jumbo, ponto de ônibus e academia.",
+   "caracteristicas": [
+    "Pronto para morar",
+    "Com e sem sacada",
+    "Vagas rotativas",
+    "Próximo ao Jumbo, ponto de ônibus e academia",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/01.webp",
+     "alt": "Fachada do prédio do apartamento de 2 dormitórios no Jardim Algarve, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/02.webp",
+     "alt": "Sala e cozinha americana, com a porta de entrada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/03.webp",
+     "alt": "Dormitório com porta da sacada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/04.webp",
+     "alt": "Vista da sacada"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/05.webp",
+     "alt": "Dormitório com janela"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/06.webp",
+     "inteira": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/06-inteira.webp",
+     "alt": "Banheiro com box"
+    },
+    {
+     "src": "img/imoveis/apartamento-2-dormitorios-jardim-algarve-lancamento/07.webp",
+     "alt": "Corredor lateral gramado do empreendimento"
+    }
+   ]
+  },
+  {
+   "id": "terreno-360m2-viamao-sao-lucas",
+   "categoria": "medio-alto",
+   "destaque": true,
+   "etiqueta": "Oportunidade",
+   "titulo": "Terreno de 360 m² em condomínio",
+   "tipo": "Terreno",
+   "bairro": "São Lucas",
+   "cidade": "Viamão",
+   "valorAPartir": 370000,
+   "areaM2": 360,
+   "descricao": "Terreno com ótima localização em condomínio com piscina adulto e infantil, academia, quadras esportivas, pista de skate, portaria 24h e ronda.",
+   "caracteristicas": [
+    "Lote em aclive",
+    "Condomínio com piscina adulto e infantil",
+    "Academia e quadras esportivas",
+    "Portaria 24h e ronda"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/terreno-360m2-viamao-sao-lucas/01.webp",
+     "alt": "Terreno em aclive, de frente, em condomínio no bairro São Lucas, Viamão"
+    },
+    {
+     "src": "img/imoveis/terreno-360m2-viamao-sao-lucas/02.webp",
+     "alt": "Terreno e rua do condomínio"
+    },
+    {
+     "src": "img/imoveis/terreno-360m2-viamao-sao-lucas/03.webp",
+     "alt": "Terreno e rua do condomínio, sentido oposto"
+    },
+    {
+     "src": "img/imoveis/terreno-360m2-viamao-sao-lucas/04.webp",
+     "alt": "Terreno com o sol ao fundo"
+    }
+   ]
+  }
+ ]
 }

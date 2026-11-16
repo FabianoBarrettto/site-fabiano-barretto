@@ -53,3 +53,11 @@ Responsável: agente dev-site (subordinado ao coordenador).
   - "Apartamento de 1 dormitório em lançamento", Jardim Algarve, valor "Consulte", a partir de 28 m², vaga rotativa, "Lançamento", 6 fotos (fachada e banheiro em 4:5 inteira na galeria).
 - URLs no `sitemap.xml`. Verificado em 375 px e 1366 px: início, imóveis, busca por Bela Vista (3) e Jardim Algarve (3), quartos 2+ (1), valor até R$ 200 mil e R$ 250 mil, e as 3 páginas novas; sem rolagem horizontal, imagens ok, console sem erros.
 - **Página inicial**: a faixa "Imóveis para você conhecer" mostra todos os imóveis MCMV (hoje 7), dos mais novos (últimos do cadastro) para os mais antigos; no celular desliza com "Deslize →", no computador vira grade de 4 colunas (2 linhas, sem setas), no tablet grade de 2 colunas. `destaque: false` tira um imóvel da página inicial. Verificado em 375, 768 e 1366 px: sem rolagem horizontal da página, imagens ok, console sem erros.
+
+## 2026-11-16 (2)
+- **2 imóveis novos** (fichas e fotos tratadas do escritório, commit 3446701; sem nome de empreendimento, de pessoa nem endereço):
+  - Apartamento de 2 dormitórios pronto para morar, Jardim Algarve, Alvorada (MCMV, etiqueta Lançamento, a partir de R$ 194.000, a partir de 40 m²). 7 fotos (01, 02, 04, 05, 06, 07 e 08 da ordem original; a 03 e a 09 ficaram de fora por decisão do usuário); o banheiro usa a versão 4:5 (`06-inteira.webp`) na galeria. É o primeiro da faixa do MCMV na página inicial.
+  - Terreno de 360 m² em condomínio, São Lucas, Viamão (médio e alto padrão, etiqueta Oportunidade, a partir de R$ 370.000). 4 fotos, capa 01. Sem quartos, banheiros e vagas (os campos vazios não aparecem) e sem FGTS/subsídio.
+- Fotos em WebP (1200×900, até 200 KB; 720×900 para a `inteira`), sem metadados.
+- Correção: título e descrição da página do imóvel usavam "Alvorada RS" fixo; agora usam a cidade do imóvel. Opção "Terreno" nos filtros de tipo (início e imóveis). URLs dos 2 imóveis no `sitemap.xml`.
+- Verificado em 375 px e 1366 px (início, imóveis, médio/alto, 2 páginas novas): sem rolagem horizontal, sem erros no console, sem imagem quebrada, ordem do mais novo ao mais antigo.
