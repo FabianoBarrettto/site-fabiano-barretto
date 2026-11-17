@@ -61,3 +61,6 @@ Responsável: agente dev-site (subordinado ao coordenador).
 - Fotos em WebP (1200×900, até 200 KB; 720×900 para a `inteira`), sem metadados.
 - Correção: título e descrição da página do imóvel usavam "Alvorada RS" fixo; agora usam a cidade do imóvel. Opção "Terreno" nos filtros de tipo (início e imóveis). URLs dos 2 imóveis no `sitemap.xml`.
 - Verificado em 375 px e 1366 px (início, imóveis, médio/alto, 2 páginas novas): sem rolagem horizontal, sem erros no console, sem imagem quebrada, ordem do mais novo ao mais antigo.
+
+## 2026-11-17
+- **Imóvel novo**: Apartamento de 1 dormitório pronto para morar, Jardim Algarve, Alvorada (MCMV, a partir de R$ 162.000, 28 m², sem etiqueta, sem vaga na ficha). 5 fotos tratadas (commit 200059a); fachada e banheiro com versão 4:5 na galeria. Não repete os outros 1D do Jardim Algarve (prédio diferente nas fotos, valor e área próprios). Sem nome de rua, de empreendimento nem endereço. URL no `sitemap.xml`.

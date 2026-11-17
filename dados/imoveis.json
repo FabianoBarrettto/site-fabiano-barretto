@@ -500,6 +500,51 @@
      "alt": "Terreno com o sol ao fundo"
     }
    ]
+  },
+  {
+   "id": "apartamento-1-dormitorio-jardim-algarve-pronto-2",
+   "categoria": "mcmv",
+   "destaque": true,
+   "titulo": "Apartamento de 1 dormitório pronto para morar",
+   "tipo": "Apartamento",
+   "bairro": "Jardim Algarve",
+   "cidade": "Alvorada",
+   "valorAPartir": 162000,
+   "quartos": 1,
+   "banheiros": 1,
+   "areaM2": 28,
+   "descricao": "Apartamento de 1 dormitório com sala e cozinha americana e banheiro, com opções com e sem sacada. Empreendimento com ótima localização e fácil acesso à Avenida Lourdes Monteiro, próximo ao mercado Jumbo e a ponto de ônibus.",
+   "caracteristicas": [
+    "Pronto para morar",
+    "Com e sem sacada",
+    "Próximo ao Jumbo",
+    "Fácil acesso à Av. Lourdes Monteiro",
+    "Aceita FGTS e subsídio do Minha Casa Minha Vida"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/01.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/01-inteira.webp",
+     "alt": "Fachada do prédio do apartamento de 1 dormitório no Jardim Algarve, Alvorada"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/02.webp",
+     "alt": "Sala e cozinha americana"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/03.webp",
+     "alt": "Sala e cozinha, outro ângulo"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/04.webp",
+     "alt": "Dormitório com janela"
+    },
+    {
+     "src": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/05.webp",
+     "inteira": "img/imoveis/apartamento-1-dormitorio-jardim-algarve-pronto-2/05-inteira.webp",
+     "alt": "Banheiro"
+    }
+   ]
   }
  ]
 }
