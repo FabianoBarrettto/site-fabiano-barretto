@@ -64,3 +64,6 @@ Responsável: agente dev-site (subordinado ao coordenador).
 
 ## 2026-11-17
 - **Imóvel novo**: Apartamento de 1 dormitório pronto para morar, Jardim Algarve, Alvorada (MCMV, a partir de R$ 162.000, 28 m², sem etiqueta, sem vaga na ficha). 5 fotos tratadas (commit 200059a); fachada e banheiro com versão 4:5 na galeria. Não repete os outros 1D do Jardim Algarve (prédio diferente nas fotos, valor e área próprios). Sem nome de rua, de empreendimento nem endereço. URL no `sitemap.xml`.
+
+## 2026-11-24
+- **Números e placas borrados nas fachadas** (para não expor endereço): desfoque forte e ilegível nos números de casa/prédio, no telefone escrito no poste e na placa de venda, mantendo a marca d'água, o tamanho (1200×900 e 720×900) e a qualidade (WebP q80). Fotos alteradas: `apartamento-1-dormitorio-jardim-algarve-em-obra/01` e `01-inteira`; `apartamento-1-dormitorio-jardim-algarve-lancamento/01` e `01-inteira`; `apartamento-1-dormitorio-jardim-aparecida-01/01` e `01-inteira`; `apartamento-1-dormitorio-jardim-algarve-pronto/01`; `apartamento-2-dormitorios-jardim-algarve-lancamento/01`.
