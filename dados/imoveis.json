@@ -602,6 +602,97 @@
      "alt": "Minimercado em container no condomínio"
     }
    ]
+  },
+  {
+   "id": "casa-3-dormitorios-viamao-vila-augusta",
+   "categoria": "medio-alto",
+   "destaque": true,
+   "etiqueta": "Oportunidade",
+   "titulo": "Casa de 3 dormitórios em condomínio fechado",
+   "tipo": "Casa",
+   "bairro": "Vila Augusta",
+   "cidade": "Viamão",
+   "valorAPartir": 785000,
+   "quartos": 3,
+   "banheiros": 2,
+   "vagas": 4,
+   "areaM2": 125,
+   "descricao": "Casa com fachada imponente, sala ampla, cozinha com espera para ilha, lavanderia e 3 dormitórios (sendo uma suíte). Pátio aos fundos da residência com acesso pela cozinha e pela suíte.",
+   "caracteristicas": [
+    "Próximo às áreas de lazer",
+    "Suíte com acesso ao pátio",
+    "Cozinha com espera para ilha",
+    "Lavanderia",
+    "4 vagas",
+    "Aceita FGTS"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/01.webp",
+     "alt": "Fachada da casa de 3 dormitórios em condomínio fechado, Vila Augusta, Viamão"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/02.webp",
+     "alt": "Sala ampla"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/03.webp",
+     "alt": "Sala com acesso ao pátio"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/04.webp",
+     "alt": "Lavabo"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/05.webp",
+     "alt": "Corredor"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/06.webp",
+     "alt": "Dormitório"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/07.webp",
+     "alt": "Dormitório"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/08.webp",
+     "alt": "Banheiro"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/09.webp",
+     "alt": "Banheiro"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/10.webp",
+     "alt": "Dormitório"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/11.webp",
+     "alt": "Suíte com saída para o pátio",
+     "inteira": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/11-inteira.webp"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/12.webp",
+     "alt": "Portaria do condomínio"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/13.webp",
+     "alt": "Piscina do condomínio"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/14.webp",
+     "alt": "Salão de festas do condomínio"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/15.webp",
+     "alt": "Academia do condomínio"
+    },
+    {
+     "src": "img/imoveis/casa-3-dormitorios-viamao-vila-augusta/16.webp",
+     "alt": "Quadra de areia do condomínio"
+    }
+   ]
   }
  ]
 }
