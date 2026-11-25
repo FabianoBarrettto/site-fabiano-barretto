@@ -270,6 +270,27 @@
     if (document.readyState === 'complete') iniciar(); else window.addEventListener('load', iniciar);
   }
 
+  /* Espelho de vendas 3D (só nos imóveis com "espelho": true; o 3D carrega quando a seção aparece na tela) */
+  function montarEspelho(im) {
+    var alvo = detalhe.querySelector('.galeria');
+    if (!alvo) return;
+    var s = document.createElement('section');
+    s.className = 'espelho'; s.id = 'espelho';
+    s.setAttribute('data-json', 'dados/espelhos/' + im.id + '.json'); s.setAttribute('data-base', ''); s.setAttribute('data-cartao', 'abaixo');
+    s.setAttribute('aria-labelledby', 'esp-tit');
+    s.innerHTML = '<div class="espelho-topo"><h2 id="esp-tit">Escolha sua unidade</h2><ul class="espelho-legenda" aria-label="Legenda"></ul></div>' +
+      '<p>Gire o prédio, aproxime e toque numa unidade para ver andar, metragem, planta e fotos.</p>' +
+      '<p class="espelho-aviso" hidden>A disponibilidade de cada unidade é confirmada pelo corretor: toque numa unidade e pergunte.</p>' +
+      '<div class="espelho-area"><div class="espelho-palco"><div class="espelho-carregando">Carregando o prédio em 3D…</div>' +
+      '<span class="espelho-dica">Arraste para girar · pinça para aproximar</span>' +
+      '<div class="espelho-fallback"><img alt="Fachada do prédio" width="800" height="600"><p>Não foi possível mostrar o 3D neste aparelho. Veja a lista de unidades abaixo.</p></div></div>' +
+      '<div class="unidade-cartao" role="dialog" aria-label="Detalhes da unidade" aria-live="polite"></div></div>' +
+      '<div class="espelho-lista"><h3>Lista de unidades</h3><div class="tabela-wrap"><table class="tabela-uni"><thead><tr></tr></thead><tbody></tbody></table></div>' +
+      '<p class="aviso-pequeno" style="margin-top:10px">Ilustração estilizada do prédio, sujeita a alterações. Plantas ilustrativas, sem escala. Valores e condições sujeitos à aprovação de crédito.</p></div>';
+    alvo.insertAdjacentElement('afterend', s);
+    import(new URL('espelho/espelho.js', document.baseURI).href).then(function (m) { return m.iniciarEspelho(s); }).catch(function () { s.remove(); });
+  }
+
   function renderDetalhe(im) {
     var imgs = im.imagens || [];
     var msg = 'Olá, Fabiano! Tenho interesse no imóvel "' + im.titulo + '" (' + im.bairro + ', ' + im.cidade + ') que vi no seu site. Ref.: ' + im.id + '. Pode me passar mais informações?';
@@ -331,6 +352,7 @@
       '<a class="btn btn-contorno btn-bloco" style="margin-top:6px" href="simulacao.html">Fazer simulação gratuita</a>' +
       '</div></aside></div>';
     detalhe.innerHTML = html;
+    if (im.espelho) montarEspelho(im);
 
     detalhe.querySelectorAll('.youtube-leve').forEach(function (b) {
       b.addEventListener('click', function () {

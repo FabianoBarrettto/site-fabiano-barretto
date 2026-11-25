@@ -1,0 +1,152 @@
+{
+ "_leia-me": "Espelho 3D do Bela Vista 1D (lançamento). Só as 12 unidades da frente (existem 4 nos fundos, fora por enquanto). Sem numeração: as unidades aparecem como 'andar + posição' ('numero' é só código interno). Sacada: só as 2 do meio dos andares 2 e 3 (tipo A). 'status': disponivel, reservado, vendido ou consulte (ainda tudo 'consulte'). 'planta' (opcional, em tipos) mostra a planta ilustrativa do tipo no cartão.",
+ "exemplo": false,
+ "imovel": "apartamento-1-dormitorio-bela-vista-lancamento",
+ "titulo": "Apartamento de 1 dormitório em lançamento",
+ "bairro": "Bela Vista",
+ "cidade": "Alvorada",
+ "fallback": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/01.webp",
+ "geometria": {
+  "largura": 2.5,
+  "profundidade": 3.4,
+  "saguao": 1.5,
+  "coroa": true
+ },
+ "tipos": {
+  "A": {
+   "nome": "1 dormitório com sacada",
+   "area": 31,
+   "sacada": true,
+   "fotos": [
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/03.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/04.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/05.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp"
+   ],
+   "planta": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/planta-A.webp"
+  },
+  "B": {
+   "nome": "1 dormitório sem sacada",
+   "area": 31,
+   "sacada": false,
+   "fotos": [
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/02.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/03.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/04.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/05.webp",
+    "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp"
+   ],
+   "planta": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/planta-B.webp"
+  }
+ },
+ "andares": [
+  {
+   "andar": 1,
+   "unidades": [
+    {
+     "numero": "101",
+     "lado": "frente",
+     "posicao": 0,
+     "tipo": "B",
+     "status": "consulte"
+    },
+    {
+     "numero": "102",
+     "lado": "frente",
+     "posicao": 1,
+     "tipo": "B",
+     "status": "consulte"
+    },
+    {
+     "numero": "103",
+     "lado": "frente",
+     "posicao": 2,
+     "tipo": "B",
+     "status": "consulte"
+    },
+    {
+     "numero": "104",
+     "lado": "frente",
+     "posicao": 3,
+     "tipo": "B",
+     "status": "consulte"
+    }
+   ]
+  },
+  {
+   "andar": 2,
+   "unidades": [
+    {
+     "numero": "201",
+     "lado": "frente",
+     "posicao": 0,
+     "tipo": "B",
+     "status": "consulte"
+    },
+    {
+     "numero": "202",
+     "lado": "frente",
+     "posicao": 1,
+     "tipo": "A",
+     "status": "consulte"
+    },
+    {
+     "numero": "203",
+     "lado": "frente",
+     "posicao": 2,
+     "tipo": "A",
+     "status": "consulte"
+    },
+    {
+     "numero": "204",
+     "lado": "frente",
+     "posicao": 3,
+     "tipo": "B",
+     "status": "consulte"
+    }
+   ]
+  },
+  {
+   "andar": 3,
+   "unidades": [
+    {
+     "numero": "301",
+     "lado": "frente",
+     "posicao": 0,
+     "tipo": "B",
+     "status": "consulte"
+    },
+    {
+     "numero": "302",
+     "lado": "frente",
+     "posicao": 1,
+     "tipo": "A",
+     "status": "consulte"
+    },
+    {
+     "numero": "303",
+     "lado": "frente",
+     "posicao": 2,
+     "tipo": "A",
+     "status": "consulte"
+    },
+    {
+     "numero": "304",
+     "lado": "frente",
+     "posicao": 3,
+     "tipo": "B",
+     "status": "consulte"
+    }
+   ]
+  }
+ ],
+ "semNumeracao": true,
+ "terreo": true,
+ "posicoes": [
+  "esquerda",
+  "meio esquerda",
+  "meio direita",
+  "direita"
+ ]
+}

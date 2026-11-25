@@ -248,7 +248,8 @@
      "src": "img/imoveis/apartamento-1-dormitorio-bela-vista-lancamento/07.webp",
      "alt": "Banheiro com box"
     }
-   ]
+   ],
+   "espelho": true
   },
   {
    "id": "apartamento-1-dormitorio-bela-vista-pronto",
