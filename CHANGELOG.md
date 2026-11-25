@@ -74,3 +74,5 @@ Responsável: agente dev-site (subordinado ao coordenador).
 
 ## 2026-11-25 (2)
 - **Imóvel novo**: Terreno de 150 m² em condomínio fechado, Cocão, Viamão (médio e alto padrão, etiqueta Oportunidade, a partir de R$ 113.000). Sem quartos, banheiros e vagas (campos vazios não aparecem) e sem FGTS/subsídio. Destaques: terreno plano, próximo às áreas de lazer, condomínio fechado. 9 fotos tratadas (commit d4c988f do escritório; capa = piscina; sem nome do condomínio, número da portaria nem endereço), WebP 1200×900 até 200 KB, sem metadados. URL no `sitemap.xml`.
+- Terreno do Cocão, ajuste pedido pelo usuário: ordem das fotos conforme a numeração do Drive (capa = portaria, depois lote, mapa, piscina, salão, academia, playground, quadra e container) e descrição atualizada com "7,5 m de frente e 20 m de fundos" (também como destaque).
+- Terreno de 150 m² (Viamão): bairro corrigido para **Vila Augusta** (pedido do usuário; antes constava Cocão por engano). O endereço da página (`id` terreno-150m2-viamao-cocao) foi mantido para não quebrar links já compartilhados; o id não aparece como texto no site.

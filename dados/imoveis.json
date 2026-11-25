@@ -553,32 +553,33 @@
    "etiqueta": "Oportunidade",
    "titulo": "Terreno de 150 m² em condomínio fechado",
    "tipo": "Terreno",
-   "bairro": "Cocão",
+   "bairro": "Vila Augusta",
    "cidade": "Viamão",
    "valorAPartir": 113000,
    "areaM2": 150,
-   "descricao": "Viva em um condomínio fechado, cercado por natureza, com fácil acesso à zona norte de Porto Alegre, hospitais, universidades e centros comerciais.",
+   "descricao": "Terreno com 7,5 m de frente e 20 m de fundos. Viva em um condomínio fechado, cercado por natureza, com fácil acesso à zona norte de Porto Alegre, hospitais, universidades e centros comerciais.",
    "caracteristicas": [
+    "7,5 m de frente por 20 m de fundos",
     "Terreno plano",
     "Próximo às áreas de lazer",
     "Condomínio fechado"
    ],
    "imagens": [
     {
-     "src": "img/imoveis/terreno-150m2-viamao-cocao/01.webp",
-     "alt": "Piscina e área de convivência do condomínio fechado, em Viamão"
-    },
-    {
      "src": "img/imoveis/terreno-150m2-viamao-cocao/02.webp",
      "alt": "Portaria do condomínio fechado"
     },
     {
      "src": "img/imoveis/terreno-150m2-viamao-cocao/03.webp",
-     "alt": "Terreno plano em condomínio fechado, bairro Cocão, Viamão"
+     "alt": "Terreno plano em condomínio fechado, bairro Vila Augusta, Viamão"
     },
     {
      "src": "img/imoveis/terreno-150m2-viamao-cocao/04.webp",
      "alt": "Mapa ilustrativo do loteamento com o terreno marcado em vermelho"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/01.webp",
+     "alt": "Piscina e área de convivência do condomínio fechado, em Viamão"
     },
     {
      "src": "img/imoveis/terreno-150m2-viamao-cocao/05.webp",
