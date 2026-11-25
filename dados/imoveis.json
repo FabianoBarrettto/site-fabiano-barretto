@@ -545,6 +545,62 @@
      "alt": "Banheiro"
     }
    ]
+  },
+  {
+   "id": "terreno-150m2-viamao-cocao",
+   "categoria": "medio-alto",
+   "destaque": true,
+   "etiqueta": "Oportunidade",
+   "titulo": "Terreno de 150 m² em condomínio fechado",
+   "tipo": "Terreno",
+   "bairro": "Cocão",
+   "cidade": "Viamão",
+   "valorAPartir": 113000,
+   "areaM2": 150,
+   "descricao": "Viva em um condomínio fechado, cercado por natureza, com fácil acesso à zona norte de Porto Alegre, hospitais, universidades e centros comerciais.",
+   "caracteristicas": [
+    "Terreno plano",
+    "Próximo às áreas de lazer",
+    "Condomínio fechado"
+   ],
+   "imagens": [
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/01.webp",
+     "alt": "Piscina e área de convivência do condomínio fechado, em Viamão"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/02.webp",
+     "alt": "Portaria do condomínio fechado"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/03.webp",
+     "alt": "Terreno plano em condomínio fechado, bairro Cocão, Viamão"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/04.webp",
+     "alt": "Mapa ilustrativo do loteamento com o terreno marcado em vermelho"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/05.webp",
+     "alt": "Salão de festas do condomínio"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/06.webp",
+     "alt": "Academia do condomínio"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/07.webp",
+     "alt": "Playground do condomínio"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/08.webp",
+     "alt": "Quadra de areia do condomínio"
+    },
+    {
+     "src": "img/imoveis/terreno-150m2-viamao-cocao/09.webp",
+     "alt": "Minimercado em container no condomínio"
+    }
+   ]
   }
  ]
 }
